@@ -43,4 +43,15 @@
 .nav{
   height: 5rem;
   border-bottom: 2px solid #F7ECE1;
+} 
+
+.footer {
+  height: 5rem;
+  border-top: 2px solid #F7ECE1;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  color: #F7ECE1;
+  font-weight: bold;
+  padding-top: 2rem;
 }
