@@ -21,6 +21,8 @@ button{
   outline: none !important;
   border: none !important;
 }
+
+/*navbar*/
 .navbar-toggler:focus{
   box-shadow: none;
 }
@@ -45,9 +47,12 @@ nav{
   font-size: 1.5rem;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 993px) {
   .links{
     display: none;
+  }
+  nav{
+    position: static !important;
   }
 }
 @media (max-width: 992px) {
@@ -138,6 +143,8 @@ nav{
   background-color: #242038;
 }
 
+/*footer*/
+
 .footer {
   border-top: 2px solid #F7ECE1;
   width: 100vw;
@@ -149,7 +156,7 @@ nav{
   border-top: 2px solid #F7ECE1;
 
 }
-
+/*hero*/
 .hero{
   display: flex;
   flex-direction: column;
@@ -194,6 +201,9 @@ nav{
   margin-top: 1em;
   opacity: 0.5;
 }
+
+/*carosel*/
+
 .titlecarro{
   color: white;
   margin-top: 2em;
@@ -297,4 +307,19 @@ nav{
   margin-left: 5vw;
   margin-right: -2vw;
 }
+}
+
+.nowadays{
+  margin: 0;
+}
+.subnowadays{
+  color: white;
+  margin: 10vw 2em 10vw 2em;
+  text-align: justify;
+}
+@media (min-width: 768px){
+  .subnowadays{
+    width: 35vw;
+    margin: auto;
+  }
 }
