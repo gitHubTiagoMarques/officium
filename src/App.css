@@ -28,10 +28,14 @@ button{
   outline: none !important;
   border: none !important;
 }
+nav{
+  border-bottom: solid 2px #F7ECE1;
+  background-color: #242038;
+  outline: solid #F7ECE1 1px;
+}
 .nav{
   height: 5rem;
   color: #F7ECE1 !important;
-  border-bottom: 2px solid #F7ECE1;
   font-size: 2rem;
   justify-content: center;
   align-items: center;
@@ -62,7 +66,7 @@ button{
     display: flex;
     height: 100vh;
     background-color: #F7ECE1;
-    z-index: 100;
+    z-index: 10;
   }
   .navbar-collapse.collapsing {
     height: 100vh !important;
@@ -86,7 +90,7 @@ button{
   position: relative;
   transition: all 0.35s ease-out;
   transform-origin: center;
-  z-index: 200;
+  z-index: 15;
 
 }
 
