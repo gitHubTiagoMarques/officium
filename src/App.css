@@ -201,13 +201,26 @@ nav{
 }
 .subcarro{
   color: white;
-  margin: 10vw 2em 10vw 2em;
+  margin: 10vw 2em 14vw 2em;
   text-align: justify;
 }
-.carro img{
+.imgmobile{
   width: 12em;
 }
-/* media querrys */
+.carro{
+  color: white;
+}
+
+.thumb{
+  display: none !important;
+}
+.carousel-status{
+  display: none !important;
+}
+.control-arrow{
+  display: none !important;
+}
+/*||||||||||||||||||||||||||||||||||||||||||||||||||| media querrys |||||||||||||||||||||||||||||||||||||||||||||*/
 @media (min-width: 576px){
 .hero{
   flex-direction: row;
@@ -257,8 +270,8 @@ nav{
 .hero h2{
   margin-left: -1.8em;
 }
-.carro img{
-  display: none;
+.imgmobile{
+  display: none !important;
 }
 .carroimg{
   align-self: center;
