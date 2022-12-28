@@ -184,7 +184,19 @@ button{
   margin-top: 1em;
   opacity: 0.5;
 }
-
+.titlecarro{
+  color: white;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+.subcarro{
+  color: white;
+  margin: 10vw 2em 10vw 2em;
+  text-align: justify;
+}
+.carro img{
+  width: 12em;
+}
 /* media querrys */
 @media (min-width: 576px){
 .hero{
@@ -234,5 +246,31 @@ button{
 }
 .hero h2{
   margin-left: -1.8em;
+}
+.carro img{
+  display: none;
+}
+.carroimg{
+  align-self: center;
+  display: flex !important;
+  height: 20vw;
+  width: auto !important;
+  margin-top: 3em;
+}
+.carro{
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 4em;
+}
+.titlecarro{
+  font-size: 1.5em;
+}
+.subcarro{
+  width: 35vw;
+  margin: auto;
+}
+.carroinfo{
+  align-self: center;
+  margin-left: 2em;
 }
 }
