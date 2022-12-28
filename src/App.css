@@ -3,7 +3,7 @@
 .App {
   text-align: center;
   background-color: #242038;
-  height: 100vh;
+  min-height: 100vh;
   font-family: 'Inter', sans-serif;
 
 }
@@ -24,13 +24,14 @@
 
 .footer {
   border-top: 2px solid #F7ECE1;
-  position: absolute;
-  bottom: 0;
   width: 100vw;
   height: 5rem;
   color: #F7ECE1;
   font-weight: bold;
   padding-top: 2rem;
+  background-color: #242038;
+  border-top: 2px solid #F7ECE1;
+
 }
 
 .hero{
@@ -41,7 +42,6 @@
   height: calc(100vh - 5rem);
   justify-content: center;
   align-items: center;
-  
 }
 .title{
   display: flex;
