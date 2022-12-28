@@ -1,6 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
-import {Navbar} from './components/navbar.js'
+import Navbar from './components/navbar.js'
 import {Footer} from './components/footer.js'
 import {Hero} from './components/hero.js'
 
