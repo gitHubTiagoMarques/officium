@@ -10,9 +10,6 @@ export function Nowadays (){
             <div className={'col-sm-12 col-md-4 imgnowadays'}>
                 <img className={'nowadaysimg'} src={image}/>
             </div>
-            <div className={'col-sm-12 col-md-4'}>
-                <h1>sgasdgas gafr gadrf</h1>
-            </div>
         </section>
     )
 }

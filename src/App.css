@@ -355,9 +355,12 @@ nav{
 }
 }
 
+
+
 .nowadays{
   margin: auto;
   justify-content: center;
+  height: calc(100vh - 10rem);
 }
 .subnowadays{
   color: white;
@@ -365,7 +368,7 @@ nav{
   text-align: justify;
 }
 .nowadaysimg{
-  max-width: 60vw;
+  max-width: 40%;
 }
 @media (min-width: 768px){
   .subnowadays{
@@ -379,12 +382,18 @@ nav{
     align-content: center;
     align-items: center;
     margin-top: 2rem;
+    margin-bottom: 2rem;
+    height: auto;
   }
-}
-@media (min-width: 768px){
   .nowadays .titlecarro {
     width: 35vw;
     text-align: left;
+    margin: 1rem auto 1rem auto;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px){
+  .subnowadays{
+    max-width: 75vw;
     margin: 1rem auto 1rem auto;
   }
 }
