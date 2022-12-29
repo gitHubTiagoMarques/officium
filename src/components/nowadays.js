@@ -7,8 +7,12 @@ export function Nowadays (){
                 <p className={'subnowadays'}>It used to be that living in the cities was the best option for people looking for new job opportunities or to pursue a career in any new market, like tech.</p>
                 <p className={'subnowadays'}>But nowadays, it's different. Several factors made it that there are a lot of advantages to seeking a career path in Portugal's rural places.</p>
             </div>
-            <div className={'col-sm-12 col-md-4 imgnowadays'}>
+            <div className={'col-sm-12 col-md-4 d-none d-md-block'}>
                 <img className={'nowadaysimg'} src={image}/>
+            </div>
+            <div className={'col-sm-12 col-md-4 jobfind'}>
+                <h1 className={'titlecarro'}>Here's a tool to help you find a job in these beautiful places.</h1>
+                <button className={"call"}>Job Finder</button>
             </div>
         </section>
     )

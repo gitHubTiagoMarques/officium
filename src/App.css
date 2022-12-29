@@ -368,15 +368,24 @@ nav{
   text-align: justify;
 }
 .nowadaysimg{
-  max-width: 40%;
+  max-width: 30vw;
+}
+.jobfind .call{
+  background-color: #F7ECE1;
+  color: #242038;
+}
+.jobfind .titlecarro{
+  text-align: center !important;
+  width: auto !important;
+  margin: auto;
+}
+.jobfind{
+  object-fit: scale-down;
 }
 @media (min-width: 768px){
   .subnowadays{
     width: 35vw;
     margin: auto;
-  }
-  .nowadaysimg{
-    max-width: 30vw;
   }
   .nowadays{
     align-content: center;
