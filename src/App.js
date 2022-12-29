@@ -1,20 +1,18 @@
 import './App.css';
-import Navv from './components/navbar.js'
-import {Footer} from './components/footer.js'
-import {Hero} from './components/hero.js'
-import { Carro } from './components/carro';
-import {Nowadays} from "./components/nowadays";
-import { Comparison } from './components/comparison.js';
+import { Homepage } from './pages/Homepage.js';
+import {Finder} from './Job_Finder.js'
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-        <Navv></Navv>
-        <Hero></Hero>
-        <Carro></Carro>
-        <Comparison></Comparison>
-        <Nowadays></Nowadays>
-        <Footer></Footer>
+        <BrowserRouter>
+        <Routes>
+          <Route path='/'element={<Homepage/>}/>
+          <Route path='/Finder' element={<Finder/>}/>
+        </Routes>
+        </BrowserRouter>
 
     </div>
   );

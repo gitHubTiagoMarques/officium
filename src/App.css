@@ -260,7 +260,7 @@ nav{
   opacity: 0.5;
 }
 .compare{
-  height: 80%;
+  height: 75%;
   background-color: #242038;
   margin-top: 1em;
   width: 90%;
@@ -268,6 +268,14 @@ nav{
   border-radius: 20px;
 }
 
+a{
+  text-decoration: none;
+  color: white;
+}
+#comparison{
+  margin-top: -5rem;
+  height: 5rem;
+}
 
 /*||||||||||||||||||||||||||||||||||||||||||||||||||| media querrys |||||||||||||||||||||||||||||||||||||||||||||*/
 @media (min-width: 576px){
@@ -356,6 +364,10 @@ nav{
   align-self: center;
   margin-left: 5vw;
   margin-right: -2vw;
+}
+#comparison{
+  margin-top: 0;
+  height: 0;
 }
 }
 

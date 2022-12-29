@@ -29,14 +29,6 @@ class Carro extends Component {
             </div>
             <img className="carroimg d-none" src={dois}/>
         </div>   
-        <div className={"carro"}>
-            <div className={"col-sm-7 carroinfo"}>
-            <h2 className={'titlecarro'}>Earnings</h2>
-            <img className={"imgmobile"} src={tres}/>
-            <p className={"subcarro"}>From 1996 until now, the average monthly earnings in Portugal have more than doubled. Also, the average monthly earnings are almost double the minimum salary.</p>
-            </div>
-            <img className="carroimg d-none" src={tres}/>
-            </div>
             <div className={"carro"}>
             <div className={"col-sm-7 carroinfo"}>
             <h2 className={'titlecarro'}>Exporting</h2>
@@ -44,6 +36,14 @@ class Carro extends Component {
             <p className={"subcarro"}>Portugal's top exports are Cars, Motor Vehicles parts and accessories, and   Refined Petroleum. Also, Portugal is the world's biggest exporter of Cork.</p>
             </div>
             <img className="carroimg d-none" src={quatro}/>
+            </div>
+            <div className={"carro"}>
+            <div className={"col-sm-7 carroinfo"}>
+            <h2 className={'titlecarro'}>Earnings</h2>
+            <img className={"imgmobile"} src={tres}/>
+            <p className={"subcarro"} >From 1996 until now, the average monthly earnings in Portugal have more than doubled. Also, the average monthly earnings are almost double the minimum salary.</p>
+            </div>
+            <img className="carroimg d-none" src={tres} />
             </div>
         </Carousel>
   
