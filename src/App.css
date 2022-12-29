@@ -44,21 +44,30 @@ nav{
 }
 .navbar-brand{
   color: #F7ECE1 !important;
+  align-items: end !important;
   font-size: 1.5rem;
 }
 
 @media (min-width: 993px) {
-  .links{
-    display: none;
+  .nav-link{
+    color: #F7ECE1 !important;
+    font-size: 1.5rem !important;
+    margin-right: 10px;
+    margin-left: 10px;
   }
   nav{
     position: static !important;
+  }
+  .navbar-collapse{
+    flex-grow: 0 !important;
   }
 }
 @media (max-width: 992px) {
   .links{
     margin: auto;
+    color: #F7ECE1;
   }
+
   .navbar-collapse {
     position: absolute;
     top: 0;
@@ -379,7 +388,7 @@ a{
   height: calc(100vh - 10rem);
 }
 .nowadays .titlecarro{
-  margin-top: 10px;
+  margin-top: 50px;
 }
 .subnowadays{
   color: white;
