@@ -10,7 +10,7 @@ export function Nowadays (){
             <div className={'col-sm-12 col-md-4 d-none d-md-block'}>
                 <img className={'nowadaysimg'} src={image}/>
             </div>
-            <div className={'col-sm-12 col-md-4 jobfind'}>
+            <div className={'jobfind col-md-10 col-sm-12'}>
                 <h1 className={'titlecarro'}>Here's a tool to help you find a job in these beautiful places.</h1>
                 <button className={"call"}>Job Finder</button>
             </div>

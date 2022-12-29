@@ -271,6 +271,10 @@ nav{
 
 /*||||||||||||||||||||||||||||||||||||||||||||||||||| media querrys |||||||||||||||||||||||||||||||||||||||||||||*/
 @media (min-width: 576px){
+  .nowadays .titlecarro{
+    margin: 3rem auto 1rem auto !important;
+    font-size: 1.5em;
+  }
 .hero{
   flex-direction: row;
 }
@@ -362,6 +366,9 @@ nav{
   justify-content: center;
   height: calc(100vh - 10rem);
 }
+.nowadays .titlecarro{
+  margin-top: 10px;
+}
 .subnowadays{
   color: white;
   margin: 10vw 2em 10vw 2em;
@@ -378,9 +385,10 @@ nav{
   text-align: center !important;
   width: auto !important;
   margin: auto;
+  font-size: calc(15px + 0.390625vw);
 }
 .jobfind{
-  object-fit: scale-down;
+  text-size-adjust: auto;
 }
 @media (min-width: 768px){
   .subnowadays{
