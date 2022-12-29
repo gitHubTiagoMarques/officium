@@ -215,7 +215,7 @@ nav{
   text-align: justify;
 }
 .imgmobile{
-  width: 12em;
+  width: 60% !important;
 }
 .carro{
   color: white;
@@ -315,12 +315,12 @@ nav{
 }
 .imgmobile{
   display: none !important;
+
 }
 .carroimg{
   align-self: center;
   display: flex !important;
-  height: 20vw;
-  width: auto !important;
+  width: 30% !important;
   margin-top: 3em;
 }
 .carro{
