@@ -12,7 +12,7 @@ class Carro extends Component {
     render(){
         return(
 
-        <Carousel className={"text-white showArrows={true} onChange={onChange} onClickItem={onClickItem}"}>
+        <Carousel autoPlay interval={5000} infiniteLoop className={"text-white showArrows={true} onChange={onChange} onClickItem={onClickItem} "}>
             <div className={"carro"}>
             <div className={"col-sm-7 carroinfo"}>
             <h2 className={'titlecarro'}>Cost of living</h2>
