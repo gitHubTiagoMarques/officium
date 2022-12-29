@@ -162,7 +162,7 @@ nav{
   flex-direction: column;
   background-color: #F7ECE1;
   color: #242038;
-  height: calc(100vh - 5rem);
+  height: calc(100vh - 10rem);
   justify-content: center;
   align-items: center;
 }
@@ -211,7 +211,7 @@ nav{
 }
 .subcarro{
   color: white;
-  margin: 10vw 2em 14vw 2em;
+  margin: 10vw 3em 14vw 3em;
   text-align: justify;
 }
 .imgmobile{
@@ -230,6 +230,39 @@ nav{
 .control-arrow{
   display: none !important;
 }
+
+/* comparison||||||||||||||||||||||||||||||||| */
+.comparison{
+  display: flex;
+  height: calc(100vh - 5rem);
+  width: 100vw;
+  background-color: #F7ECE1;
+  flex-direction: column;
+}
+.comparison h1{
+  font-weight: 700;
+  font-size: 1.5em;
+  padding-top: 1.2em;
+}
+.comparison h2{
+  font-weight: 500;
+  font-size: 0.95em;
+}
+.comparison h6{
+  font-weight: 500;
+  font-size: 0.6em;
+  opacity: 0.5;
+}
+.compare{
+  height: 80%;
+  background-color: #242038;
+  margin-top: 1em;
+  width: 90%;
+  align-self: center;
+  border-radius: 20px;
+}
+
+
 /*||||||||||||||||||||||||||||||||||||||||||||||||||| media querrys |||||||||||||||||||||||||||||||||||||||||||||*/
 @media (min-width: 576px){
 .hero{
