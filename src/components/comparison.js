@@ -5,7 +5,7 @@ const Index = index;
 class Comparison extends Component{
     render(){
         return(
-            <div className={"comparison"}>
+            <div className={"comparison snap"}>
                 <span   id="comparison"></span>
                 <h1>Compare the quality of life</h1>
                 <h2>Between Portugal and other countries</h2>

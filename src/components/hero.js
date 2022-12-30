@@ -3,7 +3,7 @@ import image from "../assets/hero.png"
 import { Comparison } from "./comparison"
 export function Hero (){
     return(
-        <section className={"hero"}>
+        <section className={"hero snap"}>
             <img src={image}/>
             <div className="all">
             <div className={"col-sm-3 why"}>
