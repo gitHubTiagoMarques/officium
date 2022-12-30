@@ -1,6 +1,6 @@
 import './App.css';
 import { Homepage } from './pages/Homepage.js';
-import {Finder} from './Job_Finder.js'
+import {Finder} from './pages/Job_Finder.js'
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
