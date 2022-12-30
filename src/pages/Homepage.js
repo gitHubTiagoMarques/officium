@@ -15,6 +15,7 @@ function Homepage() {
         <Carro></Carro>
         <Comparison></Comparison>
         <Nowadays></Nowadays>
+        
         <Footer></Footer>
       </div>
     );

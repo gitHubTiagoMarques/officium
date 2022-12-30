@@ -63,6 +63,7 @@ nav{
   }
 }
 @media (max-width: 992px) {
+  
   .links{
     margin: auto;
     color: #F7ECE1;
@@ -164,6 +165,7 @@ nav{
   background-color: #242038;
   border-top: 2px solid #F7ECE1;
 }
+
 /*hero*/
 .hero{
   display: flex;
@@ -208,6 +210,7 @@ nav{
 }
 .call:active{
   filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.55));
+  color: white !important;
 }
 .hero p{
   margin-top: 1em;
@@ -346,7 +349,9 @@ a:active{
   margin-top: 1.5em !important;
   margin-bottom: 0.3em;
 }
-
+.make p{
+  max-width: 90vw;
+}
 .subsearch{
   font-weight: 700;
   font-size: 1.3rem;
@@ -359,9 +364,138 @@ a:active{
   display: flex;
   flex-direction: column;
 }
-/*||||||||||||||||||||||||||||||||||||||||||||||||||| media querrys |||||||||||||||||||||||||||||||||||||||||||||*/
-@media (min-width: 576px){
 
+/* cities!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.cities{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.city{
+  width: 10vw;
+  border-radius: 50%;
+  height: 10vw;
+  object-fit: cover;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  border: #242038 3px solid;
+  min-width: 5em;
+  min-height: 5em;
+}
+.cionety{
+  margin-top: 4em;
+  display: flex;
+  flex-direction: row;
+}
+.citwoty{
+  margin-top: 3em;
+  margin-bottom: 4em;
+  display: flex;
+  flex-direction: row;
+}
+/* results!!!!!!!!!!!!!!!!!!!1 */
+.make{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.makers{
+  display: flex;
+  flex-direction: row;
+}
+.iptmake{
+  background-color: white;
+  color: black;
+  text-align: center;
+  border: 0;
+  border-radius: 200px;
+  font-size: 1.2em;
+  font-weight: bold;
+  width: 45vw;
+  height: 2.5rem;
+  margin-top: 1.5em;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  max-width: 20em;
+}
+
+.resultado{
+  background-color: #242038;
+  border-radius: 200px;
+  color: white;
+  width: 95vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5em;
+}
+.resultados{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 50vh;
+  width: 100vw;
+  margin-bottom: 2em;
+}
+
+.jobtitle{
+  font-weight: 700;
+  font-size: 1.3em;
+}
+
+.empresa{
+  font-weight: 500;
+  font-size: 1em;
+  margin-top: -1em;
+}
+.jobempresa{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-right: 18vw;
+  padding-top: 0.5em;
+}
+.cidade{
+  font-weight: 500;
+  font-size: 1em;
+}
+.rescounter{
+  margin-top: 0.8em;
+  margin-bottom: -0.5em;
+}
+.arrow{
+  width: 1em;
+  margin-top: 2.5em;
+  margin-left: -1em;
+}
+.back{
+  font-weight: 700;
+  font-size: 1.5em;
+  position: absolute;
+  top: 13.5%;
+  left: 3vw;
+  height: 0.5em;
+  transform: rotate(90deg);
+}
+
+@media (max-width: 376px){
+.jobempresa{
+  margin-right: 4vw;;
+}
+}
+/*||||||||||||||||||||||||||||||||||||||||||||||||||| media querrys |||||||||||||||||||||||||||||||||||||||||||||*/
+@media (min-width: 992px){
+  
+  .resultado{
+    width: 45em !important;
+  }
+}
+@media (min-width: 576px){
+/* resultado!!!!!!!!!!!!!!!!!!!!!!!!!!!1 */
+.resultado{
+  width: 35em;
+}
   /* search|||||||||||||||||||||||||| */
   .iptsearch{
     width: 40vw;

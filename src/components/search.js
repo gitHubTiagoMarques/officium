@@ -1,5 +1,6 @@
 import '../App.css';
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 
 
@@ -14,7 +15,7 @@ export function Search() {
             <input className={"iptsearch"} type="text" placeholder="City / Region"></input>
             </div>
             
-            <button className={"btnsearch"}>Search</button>
+            <Link to={"/results"}><button className={"btnsearch"}>Search</button></Link>
       </div>
     );
   }
