@@ -1,4 +1,5 @@
 import image from "../assets/nowadays.png"
+import {Link} from "react-router-dom";
 export function Nowadays (){
     return (
         <section className={'row nowadays snap'}>
@@ -12,7 +13,7 @@ export function Nowadays (){
             </div>
             <div className={'jobfind col-md-10 col-sm-12'}>
                 <h1 className={'titlecarro'}>Here's a tool to help you find a job in these beautiful places.</h1>
-                <button className={"call"}>Job Finder</button>
+                <Link to={'/Finder'}><button className={"call"}>Job Finder</button></Link>
             </div>
         </section>
     )
