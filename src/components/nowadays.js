@@ -1,7 +1,7 @@
 import image from "../assets/nowadays.png"
 export function Nowadays (){
     return (
-        <section className={'row nowadays'}>
+        <section className={'row nowadays snap'}>
             <div className={'col-sm-12 col-md-6'}>
                 <h1 className={'titlecarro'}>Nowadays... <br/> It’s different</h1>
                 <p className={'subnowadays'}>It used to be that living in the cities was the best option for people looking for new job opportunities or to pursue a career in any new market, like tech.</p>
