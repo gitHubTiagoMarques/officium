@@ -10,8 +10,10 @@ function Finder() {
     return (
       <div className={"finder"}>
         <Navv></Navv>
-        <Search></Search>
-        <Cities></Cities>
+          <div className={'resultss'}>
+              <Search></Search>
+              <Cities></Cities>
+          </div>
         <Footer></Footer>
         
       </div>

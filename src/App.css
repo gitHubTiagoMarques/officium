@@ -503,7 +503,9 @@ a:active{
 }
 /*||||||||||||||||||||||||||||||||||||||||||||||||||| media querrys |||||||||||||||||||||||||||||||||||||||||||||*/
 @media (min-width: 992px){
-  
+  .subabout{
+    max-width: 50vw !important;
+  }
   .resultado{
     width: 45em !important;
   }
@@ -675,4 +677,33 @@ a:active{
     max-width: 75vw;
     margin: 1rem auto 1rem auto;
   }
+}
+
+/* about_us */
+.about_us{
+  min-height: 100vh;
+}
+.about{
+  min-height: calc(100vh - 10rem);
+  background-color: #F7ECE1;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.gits{
+  max-width: 100vw;
+}
+.subabout{
+  text-align: justify;
+  max-width: 90vw;
+}
+.about_us .city{
+  min-width: 100px;
+  min-height: 100px;
+  margin-bottom: 10px;
+}
+.resultss{
+  min-height: calc(100vh - 10rem);
 }

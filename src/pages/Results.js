@@ -10,8 +10,10 @@ function Results() {
     return (
       <div className={"finder"}>
         <Navv></Navv>
-        <Make></Make>
-        <Resultado></Resultado>
+          <div className={'resultss'}>
+              <Make></Make>
+              <Resultado></Resultado>
+          </div>
         <Footer></Footer>
         
       </div>
