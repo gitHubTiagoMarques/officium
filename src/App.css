@@ -274,22 +274,32 @@ nav{
   display: flex;
   height: calc(100vh - 5rem);
   width: 100vw;
-  background-color: #F7ECE1;
   flex-direction: column;
 }
 .comparison h1{
   font-weight: 700;
   font-size: 1.5em;
   padding-top: 1.2em;
+  color: #F7ECE1;
 }
 .comparison h2{
   font-weight: 500;
   font-size: 0.95em;
+  color: #F7ECE1;
+
 }
 .comparison h6{
   font-weight: 500;
   font-size: 0.6em;
   opacity: 0.5;
+  color: #F7ECE1;
+}
+hr{
+  border-top: solid 2px #F7ECE1;
+  width: 80%;
+  margin: auto;
+  opacity: 100%;
+  border-radius: 200px;
 }
 .compare{
   height: 75%;
