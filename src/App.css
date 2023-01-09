@@ -270,6 +270,72 @@ nav{
 }
 
 /* comparison||||||||||||||||||||||||||||||||| */
+.legend{
+  font-size: 0.7em;
+  opacity: 0.5;
+  font-weight: 300;
+}
+.ryze{
+  margin-top: -3em;
+}
+.two{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.one{
+  display: flex;
+  flex-direction: row;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  color: white;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  margin-left: 4em;
+  margin-right: 4em;
+}
+.one hr{
+  width: 6vw;
+  margin: 0;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+.countries{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+.countries hr{
+  width: 6vw;
+  margin: 0;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+.input{
+  border: 0;
+  border-radius: 200px;
+  width: 15vw;
+  height: 2em;
+  text-align: center;
+  padding: 0;
+  font-weight: 700;
+}
+.portugal{
+  border: 0;
+  border-radius: 200px;
+  width: 15vw;
+  height: 2em;
+  text-align: center;
+  padding: 0;
+  font-weight: 700;
+  background-color: #9067C6;
+  color: #F7ECE1;
+}
 .comparison{
   display: flex;
   height: calc(100vh - 5rem);
@@ -304,7 +370,7 @@ hr{
 .compare{
   height: 75%;
   background-color: #242038;
-  margin-top: 1em;
+  margin-top: 4.2em;
   width: 90%;
   align-self: center;
   border-radius: 20px;
@@ -521,6 +587,9 @@ a:active{
   }
 }
 @media (min-width: 576px){
+  .two{
+    flex-direction: row;
+  }
 /* resultado!!!!!!!!!!!!!!!!!!!!!!!!!!!1 */
 .resultado{
   width: 35em;
