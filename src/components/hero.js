@@ -11,7 +11,7 @@ export function Hero (){
             <h2 className={"sub"}>There are lots of benefits.</h2>
             </div>
             <div className="calldiv">
-            <button className={"call"}><a href="#comparison">Learn More</a></button>
+                    <a href="#comparison"><button className={"call"}>Learn More</button></a>
             <p>or</p>
             <Link to={"/Finder"} className="text-black"><h6><u>Find a Job</u></h6></Link>
             </div>
