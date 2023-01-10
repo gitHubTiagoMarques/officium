@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom"
 import image from "../assets/hero.png"
-import { Comparison } from "./comparison"
 export function Hero (){
     return(
         <section className={"hero snap"}>
@@ -11,7 +10,7 @@ export function Hero (){
             <h2 className={"sub"}>There are lots of benefits.</h2>
             </div>
             <div className="calldiv">
-                    <a href="#comparison"><button className={"call"}>Learn More</button></a>
+                    <Link to={'/comparison'}><button className={"call"}>Learn More</button></Link>
             <p>or</p>
             <Link to={"/Finder"} className="text-black"><h6><u>Find a Job</u></h6></Link>
             </div>

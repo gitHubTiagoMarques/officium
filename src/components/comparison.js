@@ -6,7 +6,6 @@ class Comparison extends Component{
     render(){
         return(
             <div className={"comparison snap"}>
-                <span   id="comparison"></span>
                 <h1>Compare the quality of life</h1>
                 <h2>Between Portugal and other countries</h2>
                 <h6>Based on the Quality of Life Index by Numbeo</h6>
@@ -38,12 +37,12 @@ class Comparison extends Component{
                     </div>
                     <div className={"two"}>
                     <div className={"one"}>
-                    <p>alquerubim</p>
+                    <p>111</p>
                     <div className={'ryze'}>
                         <p className={'legend'}>Quality of life index</p>
                     <hr></hr>
                     </div>
-                    <p>ponte de lima</p>
+                    <p>111</p>
                     </div>
                     <div className={"one"}>
                     <p>fá</p>
@@ -56,12 +55,12 @@ class Comparison extends Component{
                     </div>
                     <div className={"two"}>
                     <div className={"one"}>
-                    <p>alquerubim</p>
+                    <p>111</p>
                     <div className={'ryze'}>
                         <p className={'legend'}>Quality of life index</p>
                     <hr></hr>
                     </div>
-                    <p>ponte de lima</p>
+                    <p>111</p>
                     </div>
                     <div className={"one"}>
                     <p>fá</p>
@@ -74,7 +73,6 @@ class Comparison extends Component{
                     </div>
                     
                 </div>
-                <hr/>
 
             </div>
 
