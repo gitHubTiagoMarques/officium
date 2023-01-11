@@ -134,6 +134,8 @@ const Comparison = () => {
           <p></p>
         </div>
       </div>
+        <p className={"legend text-white desc"}>Quality of life Index <i class="fa fa-arrow-right"></i> Higher = Better | Purchasing Power Index <i class="fa fa-arrow-right"></i> Higher = Better | Safety Index <i class="fa fa-arrow-right"></i> Higher = Better | Health Care Index <i class="fa fa-arrow-right"></i> Higher = Better | Cost of Living Index <i class="fa fa-arrow-right"></i> Higher = Better | Property Price Ratio <i class="fa fa-arrow-right"></i> Higher = Better | Pollution Index <i class="fa fa-arrow-right"></i> Higher = Better | Gini Index <i class="fa fa-arrow-right"></i> Lower = More income equality between communitites inside a determined population.</p>
+      
     </div>
   );
 };

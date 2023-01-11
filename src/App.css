@@ -271,11 +271,20 @@ nav{
 }
 
 /* comparison||||||||||||||||||||||||||||||||| */
+.desc{
+  width: 80vw;
+  height: 5em;
+  overflow-y: auto;
+  margin: auto;
+  margin-top: 2em;
+  margin-bottom: 3em;
+}
 .legend{
   font-size: 0.7em;
   opacity: 0.5;
   font-weight: 300;
 }
+
 .ryze{
   margin-top: -3em;
 }
@@ -749,10 +758,14 @@ width: 20vw;
     font-size: 1.2em;
     width: 22vw;
   }
+  .one{
+    margin-bottom: 3em;
+  }
   .ryze p{
     font-weight: 300;
     font-size: 1em;
   }
+
   .subnowadays{
     width: 35vw;
     margin: auto;
