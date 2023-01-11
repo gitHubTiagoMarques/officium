@@ -338,7 +338,7 @@ nav{
 }
 .comparison{
   display: flex;
-  height: calc(100vh - 10em);
+  min-height: calc(100vh - 10em);
   width: 100vw;
   flex-direction: column;
 }
@@ -364,6 +364,8 @@ hr{
   border-top: solid 2px #F7ECE1;
   width: 80%;
   margin: auto;
+  margin-top: 1em;
+  margin-bottom: 3em;
   opacity: 100%;
   border-radius: 200px;
 }
@@ -744,7 +746,7 @@ width: 20vw;
   .one p{
     font-weight: 700;
     font-size: 1.2em;
-    width: 31vw;
+    width: 22vw;
   }
   .ryze p{
     font-weight: 300;
