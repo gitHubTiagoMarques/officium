@@ -7,13 +7,16 @@ import { Countries } from './pages/Countries.js';
 
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {Searchpage} from "./pages/search.js";
 
 function App() {
+
   return (
     <div className="App">
         <BrowserRouter>
         <Routes>
           <Route path='/'element={<Homepage/>}/>
+            <Route path='/Bruh' element={<Searchpage/>}/>
           <Route path='/Finder' element={<Finder/>}/>
             <Route path='/About_us'element={<About_us/>}/>
           <Route path='/Results' element={<Results/>}/>

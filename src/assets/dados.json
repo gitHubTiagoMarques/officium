@@ -1,0 +1,872 @@
+[
+  {
+    "name": "Switzerland",
+    "Quality of Life Index": "195.1",
+    "Purchasing Power Index": "116.2",
+    "Safety Index": "77.9",
+    "Health Care Index": "75.3",
+    "Cost of Living Index": "110.3",
+    "Property Price to Income Ratio": "8.9",
+    "Pollution Index": "19.4"
+  },
+  {
+    "name": "Denmark",
+    "Quality of Life Index": "194.2",
+    "Purchasing Power Index": "99.8",
+    "Safety Index": "73.7",
+    "Health Care Index": "79.8",
+    "Cost of Living Index": "73.1",
+    "Property Price to Income Ratio": "6.3",
+    "Pollution Index": "20.9"
+  },
+  {
+    "name": "Netherlands",
+    "Quality of Life Index": "191.5",
+    "Purchasing Power Index": "99.6",
+    "Safety Index": "72.4",
+    "Health Care Index": "75.9",
+    "Cost of Living Index": "67.7",
+    "Property Price to Income Ratio": "7.4",
+    "Pollution Index": "24.7"
+  },
+  {
+    "name": "Australia",
+    "Quality of Life Index": "190.7",
+    "Purchasing Power Index": "117.6",
+    "Safety Index": "55.2",
+    "Health Care Index": "77.8",
+    "Cost of Living Index": "72.3",
+    "Property Price to Income Ratio": "5.6",
+    "Pollution Index": "24.2"
+  },
+  {
+    "name": "Finland",
+    "Quality of Life Index": "186.8",
+    "Purchasing Power Index": "91.0",
+    "Safety Index": "73.2",
+    "Health Care Index": "76.8",
+    "Cost of Living Index": "63.7",
+    "Property Price to Income Ratio": "7.5",
+    "Pollution Index": "12.0"
+  },
+  {
+    "name": "Iceland",
+    "Quality of Life Index": "184.5",
+    "Purchasing Power Index": "82.6",
+    "Safety Index": "75.7",
+    "Health Care Index": "66.6",
+    "Cost of Living Index": "86.6",
+    "Property Price to Income Ratio": "6.8",
+    "Pollution Index": "15.8"
+  },
+  {
+    "name": "Norway",
+    "Quality of Life Index": "179.6",
+    "Purchasing Power Index": "86.3",
+    "Safety Index": "66.5",
+    "Health Care Index": "77.1",
+    "Cost of Living Index": "85.9",
+    "Property Price to Income Ratio": "7.8",
+    "Pollution Index": "18.0"
+  },
+  {
+    "name": "Germany",
+    "Quality of Life Index": "178.3",
+    "Purchasing Power Index": "102.7",
+    "Safety Index": "63.0",
+    "Health Care Index": "72.4",
+    "Cost of Living Index": "59.6",
+    "Property Price to Income Ratio": "10.6",
+    "Pollution Index": "28.1"
+  },
+  {
+    "name": "Austria",
+    "Quality of Life Index": "178.1",
+    "Purchasing Power Index": "75.1",
+    "Safety Index": "73.2",
+    "Health Care Index": "76.2",
+    "Cost of Living Index": "64.1",
+    "Property Price to Income Ratio": "10.9",
+    "Pollution Index": "22.2"
+  },
+  {
+    "name": "New Zealand",
+    "Quality of Life Index": "176.8",
+    "Purchasing Power Index": "85.0",
+    "Safety Index": "55.4",
+    "Health Care Index": "73.0",
+    "Cost of Living Index": "69.0",
+    "Property Price to Income Ratio": "8.0",
+    "Pollution Index": "23.9"
+  },
+  {
+    "name": "United Arab Emirates",
+    "Quality of Life Index": "174.4",
+    "Purchasing Power Index": "118.9",
+    "Safety Index": "85.1",
+    "Health Care Index": "69.7",
+    "Cost of Living Index": "58.0",
+    "Property Price to Income Ratio": "2.9",
+    "Pollution Index": "47.9"
+  },
+  {
+    "name": "Estonia",
+    "Quality of Life Index": "173.8",
+    "Purchasing Power Index": "60.4",
+    "Safety Index": "75.9",
+    "Health Care Index": "73.9",
+    "Cost of Living Index": "49.5",
+    "Property Price to Income Ratio": "10.1",
+    "Pollution Index": "18.4"
+  },
+  {
+    "name": "Luxembourg",
+    "Quality of Life Index": "173.8",
+    "Purchasing Power Index": "96.1",
+    "Safety Index": "64.4",
+    "Health Care Index": "71.5",
+    "Cost of Living Index": "72.1",
+    "Property Price to Income Ratio": "14.0",
+    "Pollution Index": "24.1"
+  },
+  {
+    "name": "Sweden",
+    "Quality of Life Index": "173.7",
+    "Purchasing Power Index": "94.9",
+    "Safety Index": "51.2",
+    "Health Care Index": "68.8",
+    "Cost of Living Index": "61.8",
+    "Property Price to Income Ratio": "9.5",
+    "Pollution Index": "18.0"
+  },
+  {
+    "name": "Spain",
+    "Quality of Life Index": "173.0",
+    "Purchasing Power Index": "77.3",
+    "Safety Index": "65.0",
+    "Health Care Index": "78.1",
+    "Cost of Living Index": "47.5",
+    "Property Price to Income Ratio": "7.5",
+    "Pollution Index": "39.1"
+  },
+  {
+    "name": "Japan",
+    "Quality of Life Index": "172.6",
+    "Purchasing Power Index": "91.1",
+    "Safety Index": "77.8",
+    "Health Care Index": "80.5",
+    "Cost of Living Index": "62.8",
+    "Property Price to Income Ratio": "10.5",
+    "Pollution Index": "39.1"
+  },
+  {
+    "name": "Oman",
+    "Quality of Life Index": "172.1",
+    "Purchasing Power Index": "78.8",
+    "Safety Index": "80.3",
+    "Health Care Index": "58.2",
+    "Cost of Living Index": "48.1",
+    "Property Price to Income Ratio": "4.6",
+    "Pollution Index": "36.8"
+  },
+  {
+    "name": "Slovenia",
+    "Quality of Life Index": "168.7",
+    "Purchasing Power Index": "57.9",
+    "Safety Index": "76.8",
+    "Health Care Index": "65.1",
+    "Cost of Living Index": "47.3",
+    "Property Price to Income Ratio": "11.7",
+    "Pollution Index": "22.8"
+  },
+  {
+    "name": "United States",
+    "Quality of Life Index": "167.2",
+    "Purchasing Power Index": "99.9",
+    "Safety Index": "51.6",
+    "Health Care Index": "68.9",
+    "Cost of Living Index": "69.9",
+    "Property Price to Income Ratio": "4.6",
+    "Pollution Index": "35.7"
+  },
+  {
+    "name": "United Kingdom",
+    "Quality of Life Index": "164.8",
+    "Purchasing Power Index": "92.9",
+    "Safety Index": "53.4",
+    "Health Care Index": "74.5",
+    "Cost of Living Index": "60.4",
+    "Property Price to Income Ratio": "8.0",
+    "Pollution Index": "40.4"
+  },
+  {
+    "name": "Czech Republic",
+    "Quality of Life Index": "163.8",
+    "Purchasing Power Index": "69.9",
+    "Safety Index": "74.2",
+    "Health Care Index": "75.5",
+    "Cost of Living Index": "44.3",
+    "Property Price to Income Ratio": "14.9",
+    "Pollution Index": "35.3"
+  },
+  {
+    "name": "Canada",
+    "Quality of Life Index": "163.8",
+    "Purchasing Power Index": "101.7",
+    "Safety Index": "56.4",
+    "Health Care Index": "70.8",
+    "Cost of Living Index": "68.8",
+    "Property Price to Income Ratio": "8.9",
+    "Pollution Index": "28.9"
+  },
+  {
+    "name": "Lithuania",
+    "Quality of Life Index": "163.0",
+    "Purchasing Power Index": "55.7",
+    "Safety Index": "67.4",
+    "Health Care Index": "73.4",
+    "Cost of Living Index": "43.1",
+    "Property Price to Income Ratio": "12.2",
+    "Pollution Index": "24.8"
+  },
+  {
+    "name": "Croatia",
+    "Quality of Life Index": "162.7",
+    "Purchasing Power Index": "52.8",
+    "Safety Index": "76.0",
+    "Health Care Index": "63.7",
+    "Cost of Living Index": "43.7",
+    "Property Price to Income Ratio": "13.2",
+    "Pollution Index": "31.4"
+  },
+  {
+    "name": "Portugal",
+    "Quality of Life Index": "162.2",
+    "Purchasing Power Index": "47.9",
+    "Safety Index": "68.5",
+    "Health Care Index": "72.1",
+    "Cost of Living Index": "42.2",
+    "Property Price to Income Ratio": "13.0",
+    "Pollution Index": "31.0"
+  },
+  {
+    "name": "Belgium",
+    "Quality of Life Index": "155.8",
+    "Purchasing Power Index": "86.3",
+    "Safety Index": "53.3",
+    "Health Care Index": "75.5",
+    "Cost of Living Index": "62.8",
+    "Property Price to Income Ratio": "6.6",
+    "Pollution Index": "49.8"
+  },
+  {
+    "name": "Qatar",
+    "Quality of Life Index": "155.6",
+    "Purchasing Power Index": "98.1",
+    "Safety Index": "85.8",
+    "Health Care Index": "73.7",
+    "Cost of Living Index": "60.6",
+    "Property Price to Income Ratio": "6.9",
+    "Pollution Index": "60.0"
+  },
+  {
+    "name": "Singapore",
+    "Quality of Life Index": "154.5",
+    "Purchasing Power Index": "94.6",
+    "Safety Index": "72.8",
+    "Health Care Index": "71.1",
+    "Cost of Living Index": "79.1",
+    "Property Price to Income Ratio": "16.8",
+    "Pollution Index": "33.0"
+  },
+  {
+    "name": "France",
+    "Quality of Life Index": "152.7",
+    "Purchasing Power Index": "79.6",
+    "Safety Index": "45.6",
+    "Health Care Index": "80.0",
+    "Cost of Living Index": "65.6",
+    "Property Price to Income Ratio": "11.8",
+    "Pollution Index": "42.2"
+  },
+  {
+    "name": "Latvia",
+    "Quality of Life Index": "152.2",
+    "Purchasing Power Index": "49.8",
+    "Safety Index": "61.5",
+    "Health Care Index": "63.2",
+    "Cost of Living Index": "45.2",
+    "Property Price to Income Ratio": "7.7",
+    "Pollution Index": "32.0"
+  },
+  {
+    "name": "Ireland",
+    "Quality of Life Index": "151.7",
+    "Purchasing Power Index": "75.2",
+    "Safety Index": "54.1",
+    "Health Care Index": "52.0",
+    "Cost of Living Index": "66.7",
+    "Property Price to Income Ratio": "7.0",
+    "Pollution Index": "35.0"
+  },
+  {
+    "name": "Slovakia",
+    "Quality of Life Index": "150.5",
+    "Purchasing Power Index": "53.8",
+    "Safety Index": "69.5",
+    "Health Care Index": "60.1",
+    "Cost of Living Index": "41.0",
+    "Property Price to Income Ratio": "12.0",
+    "Pollution Index": "38.6"
+  },
+  {
+    "name": "Saudi Arabia",
+    "Quality of Life Index": "150.2",
+    "Purchasing Power Index": "93.3",
+    "Safety Index": "75.4",
+    "Health Care Index": "61.2",
+    "Cost of Living Index": "50.3",
+    "Property Price to Income Ratio": "2.9",
+    "Pollution Index": "63.3"
+  },
+  {
+    "name": "Cyprus",
+    "Quality of Life Index": "148.2",
+    "Purchasing Power Index": "54.5",
+    "Safety Index": "68.9",
+    "Health Care Index": "54.1",
+    "Cost of Living Index": "52.5",
+    "Property Price to Income Ratio": "6.8",
+    "Pollution Index": "55.2"
+  },
+  {
+    "name": "Israel",
+    "Quality of Life Index": "146.4",
+    "Purchasing Power Index": "73.5",
+    "Safety Index": "67.8",
+    "Health Care Index": "73.7",
+    "Cost of Living Index": "77.3",
+    "Property Price to Income Ratio": "13.3",
+    "Pollution Index": "57.8"
+  },
+  {
+    "name": "Taiwan",
+    "Quality of Life Index": "143.8",
+    "Purchasing Power Index": "61.8",
+    "Safety Index": "83.9",
+    "Health Care Index": "86.0",
+    "Cost of Living Index": "55.9",
+    "Property Price to Income Ratio": "19.7",
+    "Pollution Index": "64.9"
+  },
+  {
+    "name": "Italy",
+    "Quality of Life Index": "137.3",
+    "Purchasing Power Index": "58.0",
+    "Safety Index": "53.8",
+    "Health Care Index": "66.7",
+    "Cost of Living Index": "58.5",
+    "Property Price to Income Ratio": "11.1",
+    "Pollution Index": "54.4"
+  },
+  {
+    "name": "South Africa",
+    "Quality of Life Index": "136.6",
+    "Purchasing Power Index": "77.8",
+    "Safety Index": "24.6",
+    "Health Care Index": "64.0",
+    "Cost of Living Index": "37.9",
+    "Property Price to Income Ratio": "3.3",
+    "Pollution Index": "56.4"
+  },
+  {
+    "name": "Hungary",
+    "Quality of Life Index": "136.2",
+    "Purchasing Power Index": "53.2",
+    "Safety Index": "66.1",
+    "Health Care Index": "54.3",
+    "Cost of Living Index": "34.6",
+    "Property Price to Income Ratio": "13.2",
+    "Pollution Index": "47.8"
+  },
+  {
+    "name": "Poland",
+    "Quality of Life Index": "132.2",
+    "Purchasing Power Index": "60.7",
+    "Safety Index": "67.9",
+    "Health Care Index": "54.6",
+    "Cost of Living Index": "35.1",
+    "Property Price to Income Ratio": "13.5",
+    "Pollution Index": "60.1"
+  },
+  {
+    "name": "Puerto Rico",
+    "Quality of Life Index": "131.1",
+    "Purchasing Power Index": "65.4",
+    "Safety Index": "38.2",
+    "Health Care Index": "56.9",
+    "Cost of Living Index": "64.6",
+    "Property Price to Income Ratio": "4.2",
+    "Pollution Index": "48.9"
+  },
+  {
+    "name": "Romania",
+    "Quality of Life Index": "131.1",
+    "Purchasing Power Index": "48.8",
+    "Safety Index": "67.5",
+    "Health Care Index": "56.5",
+    "Cost of Living Index": "34.9",
+    "Property Price to Income Ratio": "11.1",
+    "Pollution Index": "58.5"
+  },
+  {
+    "name": "South Korea",
+    "Quality of Life Index": "130.8",
+    "Purchasing Power Index": "81.3",
+    "Safety Index": "73.9",
+    "Health Care Index": "83.0",
+    "Cost of Living Index": "67.0",
+    "Property Price to Income Ratio": "26.5",
+    "Pollution Index": "62.4"
+  },
+  {
+    "name": "Bosnia And Herzegovina",
+    "Quality of Life Index": "129.4",
+    "Purchasing Power Index": "46.5",
+    "Safety Index": "57.3",
+    "Health Care Index": "55.3",
+    "Cost of Living Index": "32.2",
+    "Property Price to Income Ratio": "10.4",
+    "Pollution Index": "60.2"
+  },
+  {
+    "name": "Bulgaria",
+    "Quality of Life Index": "129.0",
+    "Purchasing Power Index": "46.9",
+    "Safety Index": "61.6",
+    "Health Care Index": "56.8",
+    "Cost of Living Index": "37.6",
+    "Property Price to Income Ratio": "9.6",
+    "Pollution Index": "63.8"
+  },
+  {
+    "name": "Greece",
+    "Quality of Life Index": "127.1",
+    "Purchasing Power Index": "38.4",
+    "Safety Index": "52.0",
+    "Health Care Index": "57.2",
+    "Cost of Living Index": "50.2",
+    "Property Price to Income Ratio": "12.1",
+    "Pollution Index": "51.8"
+  },
+  {
+    "name": "Mexico",
+    "Quality of Life Index": "126.9",
+    "Purchasing Power Index": "41.1",
+    "Safety Index": "46.1",
+    "Health Care Index": "72.8",
+    "Cost of Living Index": "35.1",
+    "Property Price to Income Ratio": "8.2",
+    "Pollution Index": "58.3"
+  },
+  {
+    "name": "India",
+    "Quality of Life Index": "124.4",
+    "Purchasing Power Index": "76.4",
+    "Safety Index": "55.4",
+    "Health Care Index": "65.6",
+    "Cost of Living Index": "23.9",
+    "Property Price to Income Ratio": "7.4",
+    "Pollution Index": "73.0"
+  },
+  {
+    "name": "Costa Rica",
+    "Quality of Life Index": "122.9",
+    "Purchasing Power Index": "38.6",
+    "Safety Index": "46.1",
+    "Health Care Index": "63.0",
+    "Cost of Living Index": "43.6",
+    "Property Price to Income Ratio": "10.0",
+    "Pollution Index": "44.2"
+  },
+  {
+    "name": "Uruguay",
+    "Quality of Life Index": "122.7",
+    "Purchasing Power Index": "28.6",
+    "Safety Index": "47.9",
+    "Health Care Index": "68.0",
+    "Cost of Living Index": "59.1",
+    "Property Price to Income Ratio": "18.1",
+    "Pollution Index": "44.8"
+  },
+  {
+    "name": "Malaysia",
+    "Quality of Life Index": "121.6",
+    "Purchasing Power Index": "59.4",
+    "Safety Index": "45.6",
+    "Health Care Index": "70.1",
+    "Cost of Living Index": "34.4",
+    "Property Price to Income Ratio": "8.7",
+    "Pollution Index": "62.2"
+  },
+  {
+    "name": "Serbia",
+    "Quality of Life Index": "120.4",
+    "Purchasing Power Index": "41.6",
+    "Safety Index": "61.8",
+    "Health Care Index": "52.4",
+    "Cost of Living Index": "33.3",
+    "Property Price to Income Ratio": "14.8",
+    "Pollution Index": "63.3"
+  },
+  {
+    "name": "Ecuador",
+    "Quality of Life Index": "120.3",
+    "Purchasing Power Index": "33.6",
+    "Safety Index": "42.1",
+    "Health Care Index": "68.9",
+    "Cost of Living Index": "35.7",
+    "Property Price to Income Ratio": "11.8",
+    "Pollution Index": "58.3"
+  },
+  {
+    "name": "Turkey",
+    "Quality of Life Index": "119.5",
+    "Purchasing Power Index": "28.0",
+    "Safety Index": "60.1",
+    "Health Care Index": "70.7",
+    "Cost of Living Index": "28.4",
+    "Property Price to Income Ratio": "11.9",
+    "Pollution Index": "65.1"
+  },
+  {
+    "name": "Georgia",
+    "Quality of Life Index": "119.2",
+    "Purchasing Power Index": "25.1",
+    "Safety Index": "74.7",
+    "Health Care Index": "54.5",
+    "Cost of Living Index": "34.9",
+    "Property Price to Income Ratio": "12.3",
+    "Pollution Index": "69.1"
+  },
+  {
+    "name": "Kuwait",
+    "Quality of Life Index": "118.8",
+    "Purchasing Power Index": "81.8",
+    "Safety Index": "67.0",
+    "Health Care Index": "58.9",
+    "Cost of Living Index": "46.0",
+    "Property Price to Income Ratio": "11.2",
+    "Pollution Index": "67.8"
+  },
+  {
+    "name": "Tunisia",
+    "Quality of Life Index": "117.3",
+    "Purchasing Power Index": "28.6",
+    "Safety Index": "56.1",
+    "Health Care Index": "57.3",
+    "Cost of Living Index": "25.5",
+    "Property Price to Income Ratio": "11.2",
+    "Pollution Index": "69.9"
+  },
+  {
+    "name": "Panama",
+    "Quality of Life Index": "115.3",
+    "Purchasing Power Index": "32.7",
+    "Safety Index": "56.4",
+    "Health Care Index": "61.1",
+    "Cost of Living Index": "48.3",
+    "Property Price to Income Ratio": "11.3",
+    "Pollution Index": "57.8"
+  },
+  {
+    "name": "Jordan",
+    "Quality of Life Index": "113.7",
+    "Purchasing Power Index": "32.2",
+    "Safety Index": "59.0",
+    "Health Care Index": "64.9",
+    "Cost of Living Index": "47.5",
+    "Property Price to Income Ratio": "8.2",
+    "Pollution Index": "76.2"
+  },
+  {
+    "name": "Ukraine",
+    "Quality of Life Index": "112.1",
+    "Purchasing Power Index": "36.3",
+    "Safety Index": "53.4",
+    "Health Care Index": "55.2",
+    "Cost of Living Index": "30.7",
+    "Property Price to Income Ratio": "11.3",
+    "Pollution Index": "62.3"
+  },
+  {
+    "name": "Argentina",
+    "Quality of Life Index": "110.1",
+    "Purchasing Power Index": "33.6",
+    "Safety Index": "35.9",
+    "Health Care Index": "69.0",
+    "Cost of Living Index": "32.1",
+    "Property Price to Income Ratio": "22.8",
+    "Pollution Index": "50.9"
+  },
+  {
+    "name": "North Macedonia",
+    "Quality of Life Index": "109.8",
+    "Purchasing Power Index": "35.6",
+    "Safety Index": "59.0",
+    "Health Care Index": "55.6",
+    "Cost of Living Index": "28.5",
+    "Property Price to Income Ratio": "12.7",
+    "Pollution Index": "79.5"
+  },
+  {
+    "name": "Belarus",
+    "Quality of Life Index": "109.6",
+    "Purchasing Power Index": "32.3",
+    "Safety Index": "42.8",
+    "Health Care Index": "46.1",
+    "Cost of Living Index": "26.4",
+    "Property Price to Income Ratio": "17.4",
+    "Pollution Index": "44.4"
+  },
+  {
+    "name": "Azerbaijan",
+    "Quality of Life Index": "108.8",
+    "Purchasing Power Index": "29.4",
+    "Safety Index": "68.3",
+    "Health Care Index": "46.6",
+    "Cost of Living Index": "28.3",
+    "Property Price to Income Ratio": "14.1",
+    "Pollution Index": "74.0"
+  },
+  {
+    "name": "Morocco",
+    "Quality of Life Index": "107.2",
+    "Purchasing Power Index": "32.7",
+    "Safety Index": "52.6",
+    "Health Care Index": "46.4",
+    "Cost of Living Index": "29.7",
+    "Property Price to Income Ratio": "13.2",
+    "Pollution Index": "69.3"
+  },
+  {
+    "name": "Malta",
+    "Quality of Life Index": "106.1",
+    "Purchasing Power Index": "44.8",
+    "Safety Index": "56.3",
+    "Health Care Index": "38.2",
+    "Cost of Living Index": "57.7",
+    "Property Price to Income Ratio": "12.9",
+    "Pollution Index": "81.1"
+  },
+  {
+    "name": "Brazil",
+    "Quality of Life Index": "104.0",
+    "Purchasing Power Index": "27.3",
+    "Safety Index": "33.2",
+    "Health Care Index": "57.9",
+    "Cost of Living Index": "34.8",
+    "Property Price to Income Ratio": "18.5",
+    "Pollution Index": "53.7"
+  },
+  {
+    "name": "Hong Kong",
+    "Quality of Life Index": "103.9",
+    "Purchasing Power Index": "66.9",
+    "Safety Index": "78.4",
+    "Health Care Index": "66.2",
+    "Cost of Living Index": "76.6",
+    "Property Price to Income Ratio": "42.6",
+    "Pollution Index": "67.2"
+  },
+  {
+    "name": "Russia",
+    "Quality of Life Index": "103.2",
+    "Purchasing Power Index": "42.2",
+    "Safety Index": "60.7",
+    "Health Care Index": "59.9",
+    "Cost of Living Index": "48.1",
+    "Property Price to Income Ratio": "16.9",
+    "Pollution Index": "60.8"
+  },
+  {
+    "name": "Pakistan",
+    "Quality of Life Index": "103.1",
+    "Purchasing Power Index": "24.4",
+    "Safety Index": "58.4",
+    "Health Care Index": "59.5",
+    "Cost of Living Index": "17.8",
+    "Property Price to Income Ratio": "13.4",
+    "Pollution Index": "73.7"
+  },
+  {
+    "name": "Colombia",
+    "Quality of Life Index": "102.9",
+    "Purchasing Power Index": "28.3",
+    "Safety Index": "41.3",
+    "Health Care Index": "67.5",
+    "Cost of Living Index": "25.2",
+    "Property Price to Income Ratio": "16.9",
+    "Pollution Index": "63.1"
+  },
+  {
+    "name": "Chile",
+    "Quality of Life Index": "102.9",
+    "Purchasing Power Index": "35.8",
+    "Safety Index": "43.5",
+    "Health Care Index": "64.2",
+    "Cost of Living Index": "37.2",
+    "Property Price to Income Ratio": "15.1",
+    "Pollution Index": "78.3"
+  },
+  {
+    "name": "Thailand",
+    "Quality of Life Index": "101.9",
+    "Purchasing Power Index": "30.8",
+    "Safety Index": "61.1",
+    "Health Care Index": "77.6",
+    "Cost of Living Index": "38.6",
+    "Property Price to Income Ratio": "21.6",
+    "Pollution Index": "75.4"
+  },
+  {
+    "name": "Lebanon",
+    "Quality of Life Index": "97.7",
+    "Purchasing Power Index": "32.0",
+    "Safety Index": "53.4",
+    "Health Care Index": "62.9",
+    "Cost of Living Index": "68.5",
+    "Property Price to Income Ratio": "12.7",
+    "Pollution Index": "89.5"
+  },
+  {
+    "name": "Indonesia",
+    "Quality of Life Index": "96.9",
+    "Purchasing Power Index": "25.5",
+    "Safety Index": "53.9",
+    "Health Care Index": "60.5",
+    "Cost of Living Index": "32.2",
+    "Property Price to Income Ratio": "17.8",
+    "Pollution Index": "67.2"
+  },
+  {
+    "name": "Kazakhstan",
+    "Quality of Life Index": "96.6",
+    "Purchasing Power Index": "35.2",
+    "Safety Index": "47.0",
+    "Health Care Index": "59.9",
+    "Cost of Living Index": "26.5",
+    "Property Price to Income Ratio": "9.6",
+    "Pollution Index": "73.0"
+  },
+  {
+    "name": "China",
+    "Quality of Life Index": "95.6",
+    "Purchasing Power Index": "56.2",
+    "Safety Index": "71.2",
+    "Health Care Index": "66.7",
+    "Cost of Living Index": "40.3",
+    "Property Price to Income Ratio": "38.4",
+    "Pollution Index": "80.2"
+  },
+  {
+    "name": "Egypt",
+    "Quality of Life Index": "91.2",
+    "Purchasing Power Index": "21.7",
+    "Safety Index": "53.4",
+    "Health Care Index": "47.4",
+    "Cost of Living Index": "26.3",
+    "Property Price to Income Ratio": "11.1",
+    "Pollution Index": "83.4"
+  },
+  {
+    "name": "Kenya",
+    "Quality of Life Index": "90.9",
+    "Purchasing Power Index": "32.2",
+    "Safety Index": "43.7",
+    "Health Care Index": "63.4",
+    "Cost of Living Index": "33.4",
+    "Property Price to Income Ratio": "26.9",
+    "Pollution Index": "69.2"
+  },
+  {
+    "name": "Vietnam",
+    "Quality of Life Index": "86.3",
+    "Purchasing Power Index": "28.2",
+    "Safety Index": "54.2",
+    "Health Care Index": "59.1",
+    "Cost of Living Index": "35.6",
+    "Property Price to Income Ratio": "24.1",
+    "Pollution Index": "85.6"
+  },
+  {
+    "name": "Philippines",
+    "Quality of Life Index": "81.4",
+    "Purchasing Power Index": "20.1",
+    "Safety Index": "57.6",
+    "Health Care Index": "67.7",
+    "Cost of Living Index": "33.6",
+    "Property Price to Income Ratio": "29.6",
+    "Pollution Index": "72.9"
+  },
+  {
+    "name": "Peru",
+    "Quality of Life Index": "81.3",
+    "Purchasing Power Index": "28.5",
+    "Safety Index": "32.8",
+    "Health Care Index": "55.8",
+    "Cost of Living Index": "30.7",
+    "Property Price to Income Ratio": "18.6",
+    "Pollution Index": "82.4"
+  },
+  {
+    "name": "Venezuela",
+    "Quality of Life Index": "73.0",
+    "Purchasing Power Index": "12.7",
+    "Safety Index": "16.8",
+    "Health Care Index": "39.2",
+    "Cost of Living Index": "41.8",
+    "Property Price to Income Ratio": "18.3",
+    "Pollution Index": "75.7"
+  },
+  {
+    "name": "Iran",
+    "Quality of Life Index": "69.4",
+    "Purchasing Power Index": "18.0",
+    "Safety Index": "50.3",
+    "Health Care Index": "52.3",
+    "Cost of Living Index": "36.5",
+    "Property Price to Income Ratio": "28.6",
+    "Pollution Index": "75.2"
+  },
+  {
+    "name": "Sri Lanka",
+    "Quality of Life Index": "68.9",
+    "Purchasing Power Index": "15.3",
+    "Safety Index": "59.0",
+    "Health Care Index": "72.0",
+    "Cost of Living Index": "22.4",
+    "Property Price to Income Ratio": "44.4",
+    "Pollution Index": "60.3"
+  },
+  {
+    "name": "Bangladesh",
+    "Quality of Life Index": "68.5",
+    "Purchasing Power Index": "25.3",
+    "Safety Index": "36.9",
+    "Health Care Index": "41.7",
+    "Cost of Living Index": "29.3",
+    "Property Price to Income Ratio": "11.9",
+    "Pollution Index": "85.5"
+  },
+  {
+    "name": "Nigeria",
+    "Quality of Life Index": "45.1",
+    "Purchasing Power Index": "8.2",
+    "Safety Index": "35.9",
+    "Health Care Index": "48.5",
+    "Cost of Living Index": "30.0",
+    "Property Price to Income Ratio": "22.3",
+    "Pollution Index": "88.1"
+  }
+]
