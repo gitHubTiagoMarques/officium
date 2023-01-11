@@ -2,7 +2,8 @@ import tiago from '../assets/tiago.jfif';
 import cerqueira from '../assets/cerqueira.jpeg';
 
 export function About() {
-    return (
+
+        return (
         <section className={'about'}>
             <div>
                 <h1><strong>ABOUT US</strong></h1>
