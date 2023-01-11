@@ -289,8 +289,7 @@ nav{
 .one{
   display: flex;
   flex-direction: row;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 1.3em;
   color: white;
   align-items: center;
   justify-content: center;
@@ -309,7 +308,7 @@ nav{
   align-items: center;
   justify-content: center;
   margin-top: 2em;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
 }
 .countries hr{
   width: 6vw;
@@ -339,7 +338,7 @@ nav{
 }
 .comparison{
   display: flex;
-  height: calc(100vh - 5em);
+  height: calc(100vh - 10em);
   width: 100vw;
   flex-direction: column;
 }
@@ -371,12 +370,12 @@ hr{
 .compare{
   height: 75%;
   background-color: #242038;
-  margin-top: 2.5em;
   width: 90%;
   display: flex;
   flex-direction: column;
   align-self: center;
   align-items: center;
+  justify-content: center;
   border-radius: 20px;
 }
 
@@ -588,10 +587,7 @@ a:active{
   }
 }
 @media (min-width: 576px){
-  .two{
-    flex-direction: row;
-  }
-
+  
 /* .comparison||||||||||||||||||||||||||||||||||||||||||||||||| */
 
 .input{
@@ -742,6 +738,18 @@ width: 20vw;
   text-size-adjust: auto;
 }
 @media (min-width: 768px){
+  .compare{
+    margin-top: 0.5em;
+  }
+  .one p{
+    font-weight: 700;
+    font-size: 1.2em;
+    width: 31vw;
+  }
+  .ryze p{
+    font-weight: 300;
+    font-size: 1em;
+  }
   .subnowadays{
     width: 35vw;
     margin: auto;
