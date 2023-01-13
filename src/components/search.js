@@ -1,11 +1,12 @@
 import '../App.css';
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { createSearchParams, Link, useNavigate } from 'react-router-dom';
 import { useState } from "react";
 import {Jobs} from "./jobsapi";
 
 
 export function Search() {
+    const navigate = useNavigate();
     const [inputs, setInputs] = useState({});
 
     const handleChange = (event) => {
@@ -17,6 +18,15 @@ export function Search() {
     const handleSubmit = (event) => {
         event.preventDefault();
         console.log(inputs);
+        navigate({
+            pathname: '/Results',
+            search: createSearchParams({
+                job: inputs.job,
+                city: inputs.city
+            }).toString()
+
+
+        });
 
     }
     return (
@@ -41,4 +51,4 @@ export function Search() {
       </div>
     );
   }
-  
+
