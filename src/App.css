@@ -345,6 +345,7 @@ nav{
   font-weight: 700;
   background-color: #9067C6;
   color: #F7ECE1;
+  pointer-events: none;
 }
 .comparison{
   display: flex;

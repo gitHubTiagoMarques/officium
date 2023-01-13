@@ -1,7 +1,10 @@
 import { useState } from "react";
+import { useEffect } from "react";
+import React from "react";
 import dados from "../assets/dados.json";
-
+// var linker=`https://restcountries.com/v3.1/name/${resultado.name}`;
 const Index = dados;
+const giniportugal= 33.5;
 const Portugal = {
   name: "Portugal",
   "Quality of Life Index": "162.2",
@@ -22,25 +25,51 @@ const none={
     "Property Price to Income Ratio": "",
     "Pollution Index": ""
   };
-var resultado = [];
+let resultado = [];
+let ginisearch;
 
-const Comparison = () => {
+class Comparison extends React.Component{
+  constructor (props) {
+    super(props);
+    this.state = {
+      country: none,
+      rest: "unknown",
+        }
+  }
 
-  const [country, setCountry] = useState();
+render(){
 
-  const handleChange = (e, objeto, title) => {
-    setCountry(e);
-    elemento(Index, country);
-  };
+const exportrest = (rest) =>{
+  ginisearch = rest[0].gini[2018];
+  console.log('2',ginisearch);
+}
   
-  const elemento = (objeto, title) => {
-    for (let i in objeto) {
-      if (objeto[i].name == title) {
-        resultado = objeto[i];
-        console.log(resultado);
+  const handleChange = (e) => {
+  console. log (e);
+  this.setState({state: this.state.country = e});
+  elemento (Index, this.state.country);
+    };
+    
+    const elemento = (objeto, title) => {
+      for (let i in objeto) {
+        if (objeto [i].name == title) {
+        resultado = objeto [i];
+        console. log ('search=',resultado);
+        
+        fetch('https://restcountries.com/v3.1/name/'+resultado.name)
+        .then((res) => res.json())
+        .then((json) => {
+            console.log(json)
+            this.setState({state: this.state.rest = json});
+            exportrest(this.state.rest);
+        })
       }
+    };
+    if (resultado.name != title) {
+      resultado = none;
+      console. log ('none=',resultado);
     }
-  };
+    }
 
   return (
     <div className={"comparison snap"}>
@@ -48,7 +77,7 @@ const Comparison = () => {
       <h2>Between Portugal and other countries</h2>
       <h6>Based on the Quality of Life Index by Numbeo</h6>
       <div className={"countries"}>
-        <input className={"portugal"} type={"text"} value="Portugal"></input>
+        <input className={"portugal"} defaultValue={'Portugal'} type={'text'}></input>
         <hr></hr>
         <input
           className={"input"}
@@ -57,6 +86,7 @@ const Comparison = () => {
           id="country"
           name="country"
           onChange={(e) => handleChange(e.target.value)}
+          defaultValue=""
         ></input>
       </div>
       <hr />
@@ -126,18 +156,24 @@ const Comparison = () => {
           <p>{resultado["Pollution Index"]}</p>
         </div>
         <div className={"one"}>
-          <p>Rest-Countries</p>
+          <p>{giniportugal}</p>
           <div className={"ryze"}>
             <p className={"legend"}>Gini Index</p>
             <hr></hr>
           </div>
-          <p></p>
+          <p>{ginisearch}</p>
         </div>
       </div>
-        <p className={"legend text-white desc"}>Quality of life Index <i class="fa fa-arrow-right"></i> Higher = Better | Purchasing Power Index <i class="fa fa-arrow-right"></i> Higher = Better | Safety Index <i class="fa fa-arrow-right"></i> Higher = Better | Health Care Index <i class="fa fa-arrow-right"></i> Higher = Better | Cost of Living Index <i class="fa fa-arrow-right"></i> Higher = Better | Property Price Ratio <i class="fa fa-arrow-right"></i> Higher = Better | Pollution Index <i class="fa fa-arrow-right"></i> Higher = Better | Gini Index <i class="fa fa-arrow-right"></i> Lower = More income equality between communitites inside a determined population.</p>
+        <p className={"legend text-white desc"}>Quality of life Index <i className={"fa fa-arrow-right"}></i> Higher = Better | Purchasing Power Index <i className={"fa fa-arrow-right"}></i> Higher = Better | Safety Index <i className={"fa fa-arrow-right"}></i> Higher = Better | Health Care Index <i className={"fa fa-arrow-right"}></i> Higher = Better | Cost of Living Index <i className={"fa fa-arrow-right"}></i> Lower = Better | Property Price Ratio <i className={"fa fa-arrow-right"}></i> Higher = Better to rent than buy | Pollution Index <i className={"fa fa-arrow-right"}></i> Lower = Better | Gini Index <i className={"fa fa-arrow-right"}></i> Lower = Better income equality</p>
       
     </div>
   );
-};
+}
+
+}
+
+
+
+
 
 export { Comparison };
