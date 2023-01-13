@@ -1,4 +1,5 @@
 import React from "react";
+import arrow from "../assets/arrow.svg";
 
 class Jobs extends React.Component {
 
@@ -11,12 +12,11 @@ class Jobs extends React.Component {
             DataisLoaded: false
         };
     }
-
+    apilink = `https://api.itjobs.pt/job/search.json?api_key=068a3a7e07e385c33ea2b3f1f3e53d0a&q=${this.props.trabalho}&location=1`;
     // ComponentDidMount is used to
     // execute the code
     componentDidMount() {
-        fetch(
-            "https://api.itjobs.pt/job/search.json?api_key=068a3a7e07e385c33ea2b3f1f3e53d0a&q=java")
+        fetch((this.apilink))
             .then((res) => res.json())
             .then((json) => {
                 console.log(json.results)
@@ -32,14 +32,19 @@ class Jobs extends React.Component {
             <h1> Loading... </h1> </div> ;
 
         return (
-            <div className = "App">
-                <h1> Fetch data from an api in react </h1>  {
                 items.map((item) => (
-                    <ol style={{color:'white'}}>{ item.company.name }
-                    </ol>
+                    <div className={'resultado'}>
+                        <div className={'jobempresa'}>
+                            <p className={'jobtitle'}>{item.title}</p>
+                            <p className= {'empresa'}>{item.company.name}</p>
+                        </div>
+
+                        <p className={'cidade'}>{item.types[0].name}</p>
+                        <img src={arrow} className={'arrow'}/>
+
+                    </div>
                 ))
-            }
-            </div>
+
         );
     }
 }

@@ -11,7 +11,6 @@ function Results() {
       <div className={"finder"}>
         <Navv></Navv>
           <div className={'resultss'}>
-              <Make></Make>
               <Resultado></Resultado>
           </div>
         <Footer></Footer>
