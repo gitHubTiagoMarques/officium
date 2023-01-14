@@ -40,14 +40,19 @@ class Comparison extends React.Component{
 render(){
 
 const exportrest = (rest) =>{
-  ginisearch = rest[0].gini[2018];
+  if (rest[0].gini != undefined){
+    ginisearch = Object.values(rest[0].gini);
+  }else{
+    ginisearch = "Unknown";
+  }
+  
   console.log('2',ginisearch);
 }
   
   const handleChange = (e) => {
   console. log (e);
   this.setState({state: this.state.country = e});
-  elemento (Index, this.state.country);
+  elemento (Index, this.state.country.toLowerCase());
     };
     
     const elemento = (objeto, title) => {
@@ -63,11 +68,12 @@ const exportrest = (rest) =>{
             this.setState({state: this.state.rest = json});
             exportrest(this.state.rest);
         })
-      }
+        }
     };
     if (resultado.name != title) {
       resultado = none;
       console. log ('none=',resultado);
+      ginisearch="";
     }
     }
 
@@ -164,7 +170,7 @@ const exportrest = (rest) =>{
           <p>{ginisearch}</p>
         </div>
       </div>
-        <p className={"legend text-white desc"}>Quality of life Index <i className={"fa fa-arrow-right"}></i> Higher = Better | Purchasing Power Index <i className={"fa fa-arrow-right"}></i> Higher = Better | Safety Index <i className={"fa fa-arrow-right"}></i> Higher = Better | Health Care Index <i className={"fa fa-arrow-right"}></i> Higher = Better | Cost of Living Index <i className={"fa fa-arrow-right"}></i> Lower = Better | Property Price Ratio <i className={"fa fa-arrow-right"}></i> Higher = Better to rent than buy | Pollution Index <i className={"fa fa-arrow-right"}></i> Lower = Better | Gini Index <i className={"fa fa-arrow-right"}></i> Lower = Better income equality</p>
+        <p className={"legend text-white desc opacity-75"}>Quality of life Index <i className={"fa fa-arrow-right"}></i> Higher = Better | Purchasing Power Index <i className={"fa fa-arrow-right"}></i> Higher = Better | Safety Index <i className={"fa fa-arrow-right"}></i> Higher = Better | Health Care Index <i className={"fa fa-arrow-right"}></i> Higher = Better | Cost of Living Index <i className={"fa fa-arrow-right"}></i> Lower = Better | Property Price Ratio <i className={"fa fa-arrow-right"}></i> Higher = Better to rent than buy | Pollution Index <i className={"fa fa-arrow-right"}></i> Lower = Better | Gini Index <i className={"fa fa-arrow-right"}></i> Lower = Better income equality</p>
       
     </div>
   );
