@@ -552,7 +552,7 @@ a:active{
 .empresa{
   font-weight: 500;
   font-size: 1em;
-  margin-top: -1em;
+  text-align: left;
 }
 .jobempresa{
   display: flex;
@@ -823,4 +823,26 @@ width: 20vw;
 }
 .gits .city{
   transition: 0.6s;
+}
+
+
+
+/* Jobs */
+.trabalho{
+  background-color: #242038;
+  width: 60vw;
+  margin: auto;
+  border-radius: 25px;
+  margin-top: 50px;
+  color: white;
+}
+.trabalhocima{
+  min-height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
 }

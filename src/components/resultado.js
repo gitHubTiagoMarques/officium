@@ -7,7 +7,7 @@ import {Jobs} from "./jobsapi";
 
 export function Resultado() {
     const [searchparams] = useSearchParams();
-    console.log(searchparams.get('job'))
+    console.log(searchparams.get('job'));
     return (
         <div>
         <div className={"make"}>
@@ -21,7 +21,9 @@ export function Resultado() {
                 <input className={"iptmake"} type="text" value={searchparams.get('city')}></input>
             </div>
         </div>
+            <div className={'resultss'}>
         <Jobs trabalho={searchparams.get('job')}></Jobs>
+            </div>
         </div>
     );
   }
