@@ -1,5 +1,5 @@
 import "../App.css";
-import React, { Component } from "react";
+import React from "react";
 import { Navv } from "../components/navbar.js";
 import { Footer } from "../components/footer.js";
 import { Comparison } from "../components/comparison.js";
