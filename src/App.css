@@ -863,6 +863,17 @@ width: 20vw;
 .about_us{
   min-height: 100vh;
 }
+.city{
+  width: 10vw;
+  border-radius: 50%;
+  height: 10vw;
+  object-fit: cover;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  border: #242038 3px solid;
+  min-width: 5em;
+  min-height: 5em;
+}
 .about{
   min-height: calc(100vh - 10rem);
   background-color: #F7ECE1;
