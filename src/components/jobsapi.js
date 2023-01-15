@@ -1,5 +1,5 @@
 import React from "react";
-import arrow from "../assets/arrow.svg";
+import load from "../assets/load.gif";
 import parse from 'html-react-parser';
 
 import {
@@ -35,11 +35,14 @@ class Jobs extends React.Component {
             })
     }
     render() {
-        const { DataisLoaded, items } = this.state;
+        var { DataisLoaded, items } = this.state;
         if (!DataisLoaded) return <div><br/><br/><br/>
-            <h1> Loading... </h1> </div> ;
-        return (
+            <img src={load}/> </div> ;
+
+        try {
+            return (
             items.map((item) => {
+                console.log('items')
                 const descricao = parse(item.body);
 
                 return (<AccordionItem key={item.id} className={'trabalho'}>
@@ -57,8 +60,15 @@ class Jobs extends React.Component {
                     </AccordionItemPanel>
                 </AccordionItem>)
             })
+            )
 
-        )
+        } catch (error) {
+            return (
+                <div>No Results...</div>
+            )
+        }
+
+
     }
 }
 

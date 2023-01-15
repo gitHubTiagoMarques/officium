@@ -31,6 +31,7 @@ export function Search() {
       <div className={"search"}>
             <h1 className={'titlesearch'}>MAKE THE JUMP</h1>
             <h2 className={"subsearch"}>Find your next job in Portugal’s most beautiful places.</h2>
+            <div style={{fontSize:'1rem'}}>*Both inputs are optional</div>
           <form  onSubmit={handleSubmit}>
               <div className={'inputs'}>
                   <input className={"iptsearch"} type="text" placeholder="Job Title"
