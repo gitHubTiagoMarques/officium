@@ -42,7 +42,7 @@ class Jobs extends React.Component {
             items.map((item) => {
                 const descricao = parse(item.body);
 
-                return (<AccordionItem className={'trabalho'}>
+                return (<AccordionItem key={item.id} className={'trabalho'}>
                     <AccordionItemHeading>
                         <AccordionItemButton className={'trabalhocima'}>
                             <div>

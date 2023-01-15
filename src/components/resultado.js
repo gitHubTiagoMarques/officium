@@ -15,7 +15,6 @@ export function Resultado() {
             cidadeid = data[i].id;
             }
     }
-    console.log(cidadeid)
     let trabalho;
     let titulo;
     let titulocidade

@@ -31,19 +31,22 @@ export function Search() {
       <div className={"search"}>
             <h1 className={'titlesearch'}>MAKE THE JUMP</h1>
             <h2 className={"subsearch"}>Find your next job in Portugal’s most beautiful places.</h2>
-          <form  className={'inputs'} onSubmit={handleSubmit}>
+          <form  onSubmit={handleSubmit}>
+              <div className={'inputs'}>
                   <input className={"iptsearch"} type="text" placeholder="Job Title"
-                      type="text"
-                      name="job"
-                      value={inputs.job || ""}
-                      onChange={handleChange}
+                         type="text"
+                         name="job"
+                         value={inputs.job || ""}
+                         onChange={handleChange}
                   />
-                  <input className={"iptsearch"} type="text" placeholder="City / Region"
-                      type="text"
-                      name="city"
-                      value={inputs.city || ""}
-                      onChange={handleChange}
+                  <input  className={"iptsearch"} type="text" placeholder="City / Region"
+                         type="text"
+                         name="city"
+                         value={inputs.city || ""}
+                         onChange={handleChange}
                   />
+              </div>
+
               <input className={"btnsearch"} type="submit" value={'Search'} />
           </form>
       </div>
