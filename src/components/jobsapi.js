@@ -63,7 +63,23 @@ class Jobs extends React.Component {
 
         } catch (error) {
             return (
-                <div>No Results...</div>
+                <div style={{width:'90vw',margin:'auto',textAlign:'justify',maxWidth:'50rem',marginTop:'50px'}}>
+                    <div style={{borderBottom:'solid 2px orange'}}><h5>No results found</h5></div>
+                    <div>
+                        <p>No results found. Please modify your search.</p>
+                        <div>
+                            <h6>Suggestions</h6>
+                            <ul>
+                                <li>Try more general keywords</li>
+                                <li>Check your spelling</li>
+                                <li>Avoid abbreviations</li>
+                                <li>Check our cities list</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
             )
         }
 
