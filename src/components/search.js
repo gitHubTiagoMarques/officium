@@ -2,6 +2,7 @@ import '../App.css';
 import React, { Component } from 'react';
 import { createSearchParams, useNavigate } from 'react-router-dom';
 import { useState } from "react";
+import cities from "../assets/cidades.json";
 
 
 export function Search() {
@@ -50,6 +51,31 @@ export function Search() {
 
               <input className={"btnsearch"} type="submit" value={'Search'} />
           </form>
+          <div className={'citylist'}>
+            <p className={"citytitle"}>Cities: </p><div className={'flexlist'}>
+                <ul className={'cities'}>
+                <li>Açores</li>
+                <li>Beja</li>
+                <li>Bragança</li>
+                <li>Castelo Branco</li>
+                <li>Évora</li>
+                <li>Faro</li>
+                <li>Guarda</li>
+                <li>Leiria</li>
+                
+                
+                </ul>
+                <ul className={'cities'}>
+                <li>Madeira</li>
+                <li>Portalegre</li>
+                <li>Santarém</li>
+                <li>Setúbal</li>
+                <li>Viana do Castelo</li>
+                <li>Vila Real</li>
+                <li>Viseu</li>
+                </ul>
+                </div>
+          </div>
       </div>
     );
   }

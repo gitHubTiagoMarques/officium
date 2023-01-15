@@ -177,14 +177,14 @@ nav{
 /*footer*/
 
 .footer {
-  border-top: 2px solid #F7ECE1;
+  border-top: 2px solid orange;
   width: 100vw;
   height: 5rem;
-  color: #F7ECE1;
+  color: orange;
   font-weight: bold;
   padding-top: 2rem;
   background-color: #242038;
-  border-top: 2px solid #F7ECE1;
+  border-top: 2px solid orange;
 }
 
 /*hero*/
@@ -458,6 +458,13 @@ a:active{
   width: 100vw;
   display: flex;
   flex-direction: column;
+
+}
+.finderbg{
+  background-image: url("./assets/finder.png");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
 
 .search{
@@ -519,32 +526,29 @@ a:active{
 }
 
 /* cities!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-.cities{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.city{
-  width: 10vw;
-  border-radius: 50%;
-  height: 10vw;
-  object-fit: cover;
-  margin-left: 3vw;
-  margin-right: 3vw;
-  border: #242038 3px solid;
-  min-width: 5em;
-  min-height: 5em;
-}
-.cionety{
-  margin-top: 4em;
-  display: flex;
-  flex-direction: row;
-}
-.citwoty{
+.citylist{
+  background-color: #242038;
+  border-radius: 20px;
+  padding: 1em 2em 1em 2em;
   margin-top: 3em;
-  margin-bottom: 4em;
+  max-width: 80vw;
+  margin-bottom: 2em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.flexlist{
   display: flex;
   flex-direction: row;
+  justify-content: center;
+}
+.cities{
+  font-weight: 700;
+  color: white;
+  text-align: justify;
+}
+.citytitle{
+  color: white;
 }
 /* results!!!!!!!!!!!!!!!!!!!1 */
 .make{
