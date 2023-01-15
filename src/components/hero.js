@@ -5,11 +5,11 @@ export function Hero (){
         <section className={"hero snap"}>
             <div className="all">
             <div className={"col-sm-3 why"}>
-            <h1 className={'title'}>WHY PORTUGAL?</h1>
-            <h2 className={"sub"}>There are lots of benefits.</h2>
+            <h1 className={'title'}>Work in TECH?</h1>
+            <h2 className={"sub"}>PORTUGAL.</h2>
             </div>
             <div className="calldiv">
-                    <Link to={'/comparison'}><button className={"call"}>Learn More</button></Link>
+                    <Link to={'/comparison'}><button className={"call"}>FIND OUT WHY</button></Link>
             <p>or</p>
             <Link to={"/Finder"} className="text-black"><h6><u>Find a Job</u></h6></Link>
             </div>

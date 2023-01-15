@@ -211,6 +211,8 @@ nav{
   width: 10rem;
   text-align: center;
   color: orange;
+
+
 }
 .hero img {
   width: 25em;
@@ -299,13 +301,6 @@ nav{
   color: white;
   margin: 0 3em 0 3em;
   text-align: justify;
-}
-
-/* .imgmobile{
-  width: 60% !important;
-} */
-.carro{
-  color: white;
 }
 
 .thumb{
@@ -409,19 +404,19 @@ nav{
   font-weight: 700;
   font-size: 1.5em;
   padding-top: 1.2em;
-  color: #F7ECE1;
+  color: white;
 }
 .comparison h2{
   font-weight: 500;
   font-size: 0.95em;
-  color: #F7ECE1;
+  color: white;
 
 }
 .comparison h6{
   font-weight: 500;
   font-size: 0.6em;
   opacity: 0.5;
-  color: #F7ECE1;
+  color: white;
 }
 hr{
   border-top: solid 2px #F7ECE1;
@@ -700,6 +695,7 @@ width: 20vw;
   font-size: 1.5em;
   color: orange;
   display: flex;
+  margin: 0 !important;
 }
 .call{
   width: 15em;
@@ -712,7 +708,7 @@ width: 20vw;
   align-self: flex-end;
   display: none;
   margin: 0;
-  margin-right: -2em;
+  margin-left: -5em;
 }
 .hero{
   background-color: #242038;
@@ -721,6 +717,10 @@ width: 20vw;
   flex-direction: row;
   align-content: center;
   justify-content: center;
+  overflow-x: hidden;
+}
+.title{
+  justify-content: left;
 }
 
 .calldiv{
@@ -729,6 +729,7 @@ width: 20vw;
 }
 .all{
   flex-direction: column;
+  padding-left: 3em;
 }
 .deskimg{
   display: flex !important;
@@ -742,10 +743,6 @@ width: 20vw;
   color: white;
 }
 
-.imgmobile{
-  display: none !important;
-
-}
 .carousel-root{
   height: 100vh !important;
   display: flex;
@@ -755,27 +752,6 @@ width: 20vw;
   align-content: center;
 
 }
-/* .carrousel{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-} */
-
-/* .carroimg{
-  align-self: center;
-  display: flex !important;
-  width: 25% !important;
-  margin-left: -4em;
-  margin-top: 3.5em;
-
-} */
-/* .carro{
-  display: flex;
-  padding-bottom: 4em;
-  align-items: center !important;
-  justify-content: center !important;
-  min-height: 20em;
-} */
 
 .titlecarro{
   font-size: 1.5em;
