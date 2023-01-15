@@ -1,9 +1,8 @@
 import { Link } from "react-router-dom"
-import image from "../assets/hero.png"
+import image from "../assets/back.png"
 export function Hero (){
     return(
         <section className={"hero snap"}>
-            <img src={image}/>
             <div className="all">
             <div className={"col-sm-3 why"}>
             <h1 className={'title'}>WHY PORTUGAL?</h1>
@@ -15,7 +14,7 @@ export function Hero (){
             <Link to={"/Finder"} className="text-black"><h6><u>Find a Job</u></h6></Link>
             </div>
             </div>
-            <img className="deskimg d-none" src={image}/>
+            <img className="deskimg" src={image}/>
 
             
  

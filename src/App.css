@@ -188,10 +188,10 @@ nav{
 .hero{
   display: flex;
   flex-direction: column;
-  background-color: #F7ECE1;
-  color: #242038;
+  background-color: #242038;
+  color: white;
   height: calc(100vh - 5rem);
-  justify-content: center;
+  justify-content: end;
   align-items: center;
 }
 .title{
@@ -208,14 +208,18 @@ nav{
   font-size: 1.2rem;
   width: 10rem;
   text-align: center;
-  color: #9067C6;
+  color: orange;
 }
 .hero img {
-  width: 13em;
-  margin-top: 0.5em;
+  width: 25em;
+  margin-top: 2em;
+  margin-right: 3em;
+}
+.hero h6{
+  color: white;
 }
 .call{
-  background-color: #9067C6;
+  background-color: orange;
   color: white;
   border: 0;
   border-radius: 12px;
@@ -236,7 +240,54 @@ nav{
 }
 
 /*carosel*/
+.carro1{
+  background-image: url("./assets/carro1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 5em;
+  padding-top: 2em;
+}
+.carro2{
+  background-image: url("./assets/carro2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 5em;
+  padding-top: 2em;
 
+}
+.carro3{
+  background-image: url("./assets/carro3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 5em;
+  padding-top: 2em;
+
+}
+.carro4{
+  background-image: url("./assets/carro4.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 5em;
+  padding-top: 2em;
+
+}
+.carousel{
+  display: flex;
+  justify-content: center;
+
+}
+.carroinfo{
+  height: calc(100vh - 5em);
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  padding: 0;
+  padding-top: 20vh;
+}
 .titlecarro{
   color: white;
   margin-top: 2em;
@@ -244,12 +295,13 @@ nav{
 }
 .subcarro{
   color: white;
-  margin: 10vw 3em 14vw 3em;
+  margin: 0 3em 0 3em;
   text-align: justify;
 }
-.imgmobile{
+
+/* .imgmobile{
   width: 60% !important;
-}
+} */
 .carro{
   color: white;
 }
@@ -261,7 +313,6 @@ nav{
   display: none !important;
 }
 .carousel-root{
-  height: calc(100vh - 5rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -633,35 +684,40 @@ width: 20vw;
     font-size: 1.5em;
   }
 
-.hero{
-  flex-direction: row;
-}
+
 .hero .title{
   width: 9em;
   font-size: 2.5em;
+  color: white;
 }
 .sub{
   width: 18em;
   font-size: 1.5em;
+  color: orange;
+  display: flex;
 }
 .call{
   width: 15em;
+  background-color: orange;
+  margin-bottom: 2em;
 }
 .hero img{
-  width: 20vw;
+  width: 35vw;
   justify-self: end;
+  align-self: flex-end;
   display: none;
-  margin-left: 3em;
-  margin-top: 3em;
+  margin: 0;
+  margin-right: -2em;
 }
 .hero{
+  background-color: #242038;
   height: auto;
-  padding-top: 1em;
-  padding-bottom: 4em;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
 }
-.why{
-  justify-self: start;
-}
+
 .calldiv{
   display: flex;
   flex-direction: row;
@@ -674,48 +730,64 @@ width: 20vw;
 }
 .hero p{
   margin: 2em 1em 0em 1em;
+  color: white;
 }
 .hero h6{
   margin-top: 2.1em;
+  color: white;
 }
-.hero h2{
-  margin-left: -1.8em;
-}
+
 .imgmobile{
   display: none !important;
 
 }
 .carousel-root{
-  height: auto !important;
+  height: 100vh !important;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  align-content: center;
+
 }
-.carroimg{
+/* .carrousel{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+} */
+
+/* .carroimg{
   align-self: center;
   display: flex !important;
-  width: 30% !important;
-  margin-top: 3em;
-}
-.carro{
+  width: 25% !important;
+  margin-left: -4em;
+  margin-top: 3.5em;
+
+} */
+/* .carro{
   display: flex;
-  flex-direction: row;
   padding-bottom: 4em;
-}
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 20em;
+} */
 
 .titlecarro{
   font-size: 1.5em;
 }
 .subcarro{
-  width: 35vw;
+  width: 50vw;
   margin: auto;
+  color: white;
 }
 .carroinfo{
-  align-self: center;
-  margin-left: 5vw;
-  margin-right: -2vw;
+  height: 22em;
+  padding-top: 0;
+  padding-bottom: 5em;
 }
-
+.carousel-root{
+  height: auto !important;
+}
 }
 
 
