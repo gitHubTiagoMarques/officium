@@ -1,7 +1,3 @@
-import um from "../assets/cost.svg"
-import dois from "../assets/space.svg"
-import tres from "../assets/earn.svg"
-import quatro from "../assets/export.svg"
 
 import React, { Component } from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader

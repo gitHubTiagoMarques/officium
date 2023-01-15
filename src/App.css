@@ -48,26 +48,27 @@ button{
   border: none !important;
 }
 nav{
-  border-bottom: solid 2px #F7ECE1;
+  border-bottom: solid 2px orange;
   background-color: #242038;
-  outline: solid #F7ECE1 1px;
+  outline: solid orange 1px;
+
 }
 .nav{
   height: 5rem;
-  color: #F7ECE1 !important;
+  color: orange !important;
   font-size: 2rem;
   justify-content: center;
   align-items: center;
 }
 .navbar-brand{
-  color: #F7ECE1 !important;
+  color: orange !important;
   align-items: end !important;
   font-size: 1.5rem;
 }
 
 @media (min-width: 993px) {
   .link{
-    color: #F7ECE1 !important;
+    color: white !important;
     font-size: 1.2rem !important;
     margin-right: 10px;
     margin-left: 10px;
@@ -118,7 +119,7 @@ nav{
 
 .navbar-toggler-icon {
   background-image: none!important;
-  background-color: #F7ECE1;
+  background-color: white;
   height: 3px;
   width: 25px;
   margin: 10px 0;
@@ -131,7 +132,7 @@ nav{
 
 .navbar-toggler-icon::before {
   display: block;
-  background-color: #F7ECE1;
+  background-color: white;
   height: 3px;
   content: "";
   position: relative;
@@ -143,7 +144,7 @@ nav{
 
 .navbar-toggler-icon::after {
   display: block;
-  background-color: #F7ECE1;
+  background-color: white;
   height: 3px;
   content: "";
   position: relative;
@@ -199,7 +200,7 @@ nav{
 .title{
   display: flex;
   font-weight: 700;
-  font-size: 2em;
+  font-size: 3em;
   width: 4em;
   justify-content: center;
   margin-top: 1.5em !important;
@@ -208,7 +209,6 @@ nav{
 .sub{
   font-weight: 700;
   font-size: 1.2rem;
-  width: 10rem;
   text-align: center;
   color: orange;
 
@@ -633,11 +633,22 @@ a:active{
   transform: rotate(90deg);
 }
 
+.nowadaystitle{
+  color: orange;
+}
+.jobfind .call{
+  color: white !important;
+  background-color: orange !important;
+}
+
 @media (max-width: 376px){
 .jobempresa{
   margin-right: 4vw;;
 }
 }
+
+
+
 /*||||||||||||||||||||||||||||||||||||||||||||||||||| media querrys |||||||||||||||||||||||||||||||||||||||||||||*/
 @media (min-width: 992px){
   .subabout{
@@ -680,18 +691,36 @@ width: 20vw;
 
   /* .nowadays|||||||||||||||| */
   .nowadays .titlecarro{
-    margin: 3rem auto 1rem auto !important;
     font-size: 1.5em;
+    
   }
-
 
 .hero .title{
   width: 9em;
   font-size: 2.5em;
   color: white;
 }
+.subnowadays{
+  width: 70vw;
+  margin: auto;
+  text-align: center;
+}
+.nowadays{
+  align-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  padding-bottom: 3rem;
+  height: auto !important;
+    justify-content: center;
+;
+}
+
+
+
+
+
+
 .sub{
-  width: 18em;
   font-size: 1.5em;
   color: orange;
   display: flex;
@@ -708,7 +737,6 @@ width: 20vw;
   align-self: flex-end;
   display: none;
   margin: 0;
-  margin-left: -5em;
 }
 .hero{
   background-color: #242038;
@@ -730,6 +758,7 @@ width: 20vw;
 .all{
   flex-direction: column;
   padding-left: 3em;
+  z-index: 2;
 }
 .deskimg{
   display: flex !important;
@@ -769,6 +798,7 @@ width: 20vw;
 .carousel-root{
   height: auto !important;
 }
+
 }
 
 
@@ -778,17 +808,15 @@ width: 20vw;
   justify-content: center;
   height: calc(100vh - 10rem);
 }
-.nowadays .titlecarro{
-  margin-top: 50px;
-}
+
 .subnowadays{
   color: white;
-  margin: 10vw 2em 10vw 2em;
   text-align: justify;
+  margin: auto;
+  margin-bottom: 2em;
+  width: 80vw;
 }
-.nowadaysimg{
-  max-width: 30vw;
-}
+
 .jobfind .call{
   background-color: #F7ECE1;
   color: #242038;
@@ -818,27 +846,12 @@ width: 20vw;
     font-size: 1em;
   }
 
-  .subnowadays{
-    width: 35vw;
-    margin: auto;
-  }
-  .nowadays{
-    align-content: center;
-    align-items: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    height: auto;
-  }
-  .nowadays .titlecarro {
-    width: 35vw;
-    text-align: left;
-    margin: 1rem auto 1rem auto;
-  }
+
 }
 @media (min-width: 576px) and (max-width: 767px){
   .subnowadays{
     max-width: 75vw;
-    margin: 1rem auto 1rem auto;
+    margin: 1rem auto 2em auto;
   }
 }
 
