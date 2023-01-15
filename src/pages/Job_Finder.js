@@ -12,7 +12,6 @@ function Finder() {
         <Navv></Navv>
           <div className={'resultss'}>
               <Search></Search>
-              {/* <Cities></Cities> */}
           </div>
         <Footer></Footer>
         
