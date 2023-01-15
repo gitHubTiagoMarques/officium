@@ -36,7 +36,7 @@ export function Search() {
           <form  onSubmit={handleSubmit}>
               <div className={'inputs'}>
                   <input className={"iptsearch"} type="text" placeholder="Job Title"
-                         type="text"
+                         type={"text"}
                          name="job"
                          value={inputs.job || ""}
                          onChange={handleChange}
