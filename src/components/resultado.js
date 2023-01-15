@@ -1,6 +1,6 @@
 import '../App.css';
 import React from 'react';
-import arrow from '../assets/arrow.svg'
+import arrow from '../assets/arrow.png'
 import {Link, useSearchParams} from "react-router-dom";
 import {Jobs} from "./jobsapi";
 import {Accordion} from "react-accessible-accordion";
@@ -9,7 +9,7 @@ import data from '../assets/cidades.json'
 
 export function Resultado() {
     const [searchparams] = useSearchParams();
-    var cidadeid;
+    let cidadeid;
     for(let i in data) {
         if(data[i].name  === ((searchparams.get('city').toLowerCase()))){
             cidadeid = data[i].id;

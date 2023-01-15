@@ -4,16 +4,8 @@
     "name": "açores"
   },
   {
-    "id": 1,
-    "name": "aveiro"
-  },
-  {
     "id": 3,
     "name": "beja"
-  },
-  {
-    "id": 4,
-    "name": "braga"
   },
   {
     "id": 5,
@@ -22,10 +14,6 @@
   {
     "id": 6,
     "name": "castelo branco"
-  },
-  {
-    "id": 8,
-    "name": "coimbra"
   },
   {
     "id": 10,
@@ -40,16 +28,8 @@
     "name": "guarda"
   },
   {
-    "id": 29,
-    "name": "internacional"
-  },
-  {
     "id": 13,
     "name": "leiria"
-  },
-  {
-    "id": 14,
-    "name": "lisboa"
   },
   {
     "id": 15,
@@ -58,10 +38,6 @@
   {
     "id": 12,
     "name": "portalegre"
-  },
-  {
-    "id": 18,
-    "name": "porto"
   },
   {
     "id": 20,
