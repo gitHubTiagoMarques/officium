@@ -428,7 +428,7 @@ hr {
 
 a {
   text-decoration: none;
-  color: white;
+  color: rgb(249, 193, 193);
 }
 a:active {
   color: gray !important;
@@ -637,6 +637,9 @@ a:active {
 
 /*||||||||||||||||||||||||||||||||||||||||||||||||||| media querrys |||||||||||||||||||||||||||||||||||||||||||||*/
 @media (min-width: 992px) {
+  .finderbg {
+    background-size: contain;
+  }
   .subabout {
     max-width: 50vw !important;
   }
