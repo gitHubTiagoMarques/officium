@@ -1,29 +1,53 @@
 import '../App.css';
-import React, { Component } from 'react';
+import React from 'react';
 import arrow from '../assets/arrow.svg'
 import {Link, useSearchParams} from "react-router-dom";
 import {Jobs} from "./jobsapi";
+import {Accordion} from "react-accessible-accordion";
+import data from '../assets/cidades.json'
 
 
 export function Resultado() {
     const [searchparams] = useSearchParams();
-    console.log(searchparams.get('job'));
+    var cidadeid = '1,2,3,4,5,6,8,9,10,11,29,13,14,15,12,18,20,17,22,21,16';
+    for(let i in data) {
+        if(data[i].name  === ((searchparams.get('city').toLowerCase()))){
+            cidadeid = data[i].id;
+            }
+    }
+    let trabalho;
+    let titulo;
+    let titulocidade
+    if ((searchparams.get('job')) == 'undefined'){
+        trabalho = '';
+        titulo = '-------'
+    }
+    else {
+        trabalho = (searchparams.get('job'));
+        titulo = (searchparams.get('job'));
+    }
+    if ((searchparams.get('city')) == 'undefined'){
+        titulocidade = '-------'
+    }
+    else {
+        titulocidade = (searchparams.get('city'));
+    }
     return (
-        <div>
+        <div style={{marginBottom: "50px"}}>
         <div className={"make"}>
             <Link to={"/Finder"}><img className={'back'} src={arrow}/></Link>
             <h1 className={'titlesearch'}>MAKE THE JUMP</h1>
             <p>The search might produce different results in different languages.</p>
             <h6>Recommended language: Portuguese</h6>
             <div className={"makers"}>
-                <input className={"iptmake"} type="text" value={searchparams.get('job')}></input>
+                <input disabled className={"iptmake"} type="text" value={titulo}></input>
                 <span></span>
-                <input className={"iptmake"} type="text" value={searchparams.get('city')}></input>
+                <input disabled className={"iptmake"} type="text" value={titulocidade}></input>
             </div>
         </div>
-            <div className={'resultss'}>
-        <Jobs trabalho={searchparams.get('job')}></Jobs>
-            </div>
+                <Accordion allowMultipleExpanded={false} allowZeroExpanded>
+                <Jobs trabalho={trabalho} cidadeid={cidadeid}></Jobs>
+                </Accordion>
         </div>
     );
   }
