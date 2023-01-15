@@ -1,8 +1,7 @@
 import '../App.css';
 import React, { Component } from 'react';
-import { createSearchParams, Link, useNavigate } from 'react-router-dom';
+import { createSearchParams, useNavigate } from 'react-router-dom';
 import { useState } from "react";
-import {Jobs} from "./jobsapi";
 
 
 export function Search() {
@@ -17,7 +16,6 @@ export function Search() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log(inputs);
         navigate({
             pathname: '/Results',
             search: createSearchParams({

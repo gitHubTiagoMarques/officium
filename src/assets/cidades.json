@@ -1,0 +1,86 @@
+[
+  {
+    "id": 2,
+    "name": "açores"
+  },
+  {
+    "id": 1,
+    "name": "aveiro"
+  },
+  {
+    "id": 3,
+    "name": "beja"
+  },
+  {
+    "id": 4,
+    "name": "braga"
+  },
+  {
+    "id": 5,
+    "name": "bragança"
+  },
+  {
+    "id": 6,
+    "name": "castelo branco"
+  },
+  {
+    "id": 8,
+    "name": "coimbra"
+  },
+  {
+    "id": 10,
+    "name": "évora"
+  },
+  {
+    "id": 9,
+    "name": "faro"
+  },
+  {
+    "id": 11,
+    "name": "guarda"
+  },
+  {
+    "id": 29,
+    "name": "internacional"
+  },
+  {
+    "id": 13,
+    "name": "leiria"
+  },
+  {
+    "id": 14,
+    "name": "lisboa"
+  },
+  {
+    "id": 15,
+    "name": "madeira"
+  },
+  {
+    "id": 12,
+    "name": "portalegre"
+  },
+  {
+    "id": 18,
+    "name": "porto"
+  },
+  {
+    "id": 20,
+    "name": "santarém"
+  },
+  {
+    "id": 17,
+    "name": "setúbal"
+  },
+  {
+    "id": 22,
+    "name": "viana do castelo"
+  },
+  {
+    "id": 21,
+    "name": "vila real"
+  },
+  {
+    "id": 16,
+    "name": "viseu"
+  }
+]

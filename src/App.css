@@ -68,7 +68,7 @@ nav{
 @media (min-width: 993px) {
   .link{
     color: #F7ECE1 !important;
-    font-size: 1.5rem !important;
+    font-size: 1.2rem !important;
     margin-right: 10px;
     margin-left: 10px;
   }
@@ -80,7 +80,9 @@ nav{
   }
 }
 @media (max-width: 992px) {
-  
+  .trabalho{
+    width: 90vw !important;
+  }
   .links{
     margin: auto;
   }
@@ -547,6 +549,7 @@ a:active{
 .jobtitle{
   font-weight: 700;
   font-size: 1.3em;
+  text-align: left;
 }
 
 .empresa{
@@ -845,4 +848,19 @@ width: 20vw;
   padding-bottom: 20px;
   margin-left: 25px;
   margin-right: 25px;
+}
+.trabalhobaixo{
+  padding: 25px;
+  text-align: justify;
+  color: #242038;
+  background-color: white;
+  border-bottom-right-radius: 25px ;
+  border-bottom-left-radius: 25px ;
+  overflow-y: scroll;
+  max-height: calc(100vh - 15rem);
+}
+.trabalhobaixo a{
+  color: #242038;
+  border-bottom: solid 1px #242038;
+  word-break: break-all;
 }
