@@ -9,11 +9,13 @@ import data from '../assets/cidades.json'
 
 export function Resultado() {
     const [searchparams] = useSearchParams();
-    var cidadeid = '1,2,3,4,5,6,8,9,10,11,29,13,14,15,12,18,20,17,22,21,16';
+    var cidadeid;
     for(let i in data) {
         if(data[i].name  === ((searchparams.get('city').toLowerCase()))){
             cidadeid = data[i].id;
-            }
+            }else if (searchparams.get('city') == 'undefined'){
+            cidadeid = '1,2,3,4,5,6,8,9,10,11,29,13,14,15,12,18,20,17,22,21,16';
+        }
     }
     let trabalho;
     let titulo;
@@ -38,7 +40,6 @@ export function Resultado() {
             <Link to={"/Finder"}><img className={'back'} src={arrow}/></Link>
             <h1 className={'titlesearch'}>MAKE THE JUMP</h1>
             <p>The search might produce different results in different languages.</p>
-            <h6>Recommended language: Portuguese</h6>
             <div className={"makers"}>
                 <input disabled className={"iptmake"} type="text" value={titulo}></input>
                 <span></span>
