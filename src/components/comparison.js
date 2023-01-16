@@ -42,11 +42,9 @@ class Comparison extends React.Component {
         ginisearch = "Unknown";
       }
 
-      console.log("2", ginisearch);
     };
 
     const handleChange = (e) => {
-      console.log(e);
       this.setState({ state: (this.state.country = e) });
       elemento(Index, this.state.country.toLowerCase());
     };
@@ -55,12 +53,10 @@ class Comparison extends React.Component {
       for (let i in objeto) {
         if (objeto[i].name == title) {
           resultado = objeto[i];
-          console.log("search=", resultado);
 
           fetch("https://restcountries.com/v3.1/name/" + resultado.name)
             .then((res) => res.json())
             .then((json) => {
-              console.log(json);
               this.setState({ state: (this.state.rest = json) });
               exportrest(this.state.rest);
             });
@@ -68,7 +64,6 @@ class Comparison extends React.Component {
       }
       if (resultado.name != title) {
         resultado = none;
-        console.log("none=", resultado);
         ginisearch = "";
       }
     };
