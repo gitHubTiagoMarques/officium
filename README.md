@@ -1,7 +1,7 @@
 # Getting Started with Create React App
 
 Feito com:
-* [![React][React.js]][React-url]
+* React JS
 
 Instalação:
 1. Git clone
