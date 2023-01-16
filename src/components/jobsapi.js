@@ -122,7 +122,7 @@ class Jobs extends React.Component {
                 <li>Try more general keywords</li>
                 <li>Check your spelling</li>
                 <li>Avoid abbreviations</li>
-                <li>Check our cities list</li>
+                <li>Check our locations list</li>
               </ul>
             </div>
           </div>
