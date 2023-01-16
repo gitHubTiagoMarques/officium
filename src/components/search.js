@@ -1,5 +1,5 @@
 import "../App.css";
-import React, { Component } from "react";
+import React from "react";
 import { createSearchParams, useNavigate } from "react-router-dom";
 import { useState } from "react";
 
@@ -34,17 +34,15 @@ export function Search() {
         <div className={"inputs"}>
           <input
             className={"iptsearch"}
-            type="text"
             placeholder="Job Title"
-            type={"text"}
+            type="text"
             name="job"
             value={inputs.job || ""}
             onChange={handleChange}
           />
           <input
             className={"iptsearch"}
-            type="text"
-            placeholder="City / Region"
+            placeholder="Location"
             type="text"
             name="city"
             value={inputs.city || ""}
@@ -55,7 +53,7 @@ export function Search() {
         <input className={"btnsearch"} type="submit" value={"Search"} />
       </form>
       <div className={"citylist"}>
-        <p className={"citytitle"}>Cities: </p>
+        <p className={"citytitle"}>Locations: </p>
         <div className={"flexlist"}>
           <ul className={"cities"}>
             <li>Açores</li>

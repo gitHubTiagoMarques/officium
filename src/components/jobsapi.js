@@ -15,25 +15,46 @@ class Jobs extends React.Component {
     super(props);
 
     this.state = {
+      count:1,
       items: [],
+      total:12,
       DataisLoaded: false,
     };
   }
 
-  apilink = `https://api.itjobs.pt/job/search.json?api_key=068a3a7e07e385c33ea2b3f1f3e53d0a&q=${this.props.trabalho}&location=${this.props.cidadeid}`;
-  // ComponentDidMount is used to
-  // execute the code
+
+    apilink = `https://api.itjobs.pt/job/search.json?api_key=068a3a7e07e385c33ea2b3f1f3e53d0a&q=${this.props.trabalho}&location=${this.props.cidadeid}&page=`;
+
   componentDidMount() {
-    fetch(this.apilink)
+    fetch((this.apilink + this.state.count))
       .then((res) => res.json())
       .then((json) => {
         this.setState({
           items: json.results,
+          total: json.total,
           DataisLoaded: true,
         });
       });
   }
+    componentDidUpdate(prevProps,prevState) {
+      console.log(prevState.count)
+        console.log(this.state.count)
+      if(prevState.count !== this.state.count){
+          fetch((this.apilink + this.state.count))
+              .then((res) => res.json())
+              .then((json) => {
+                      this.setState({
+                          items: [...this.state.items,...json.results],
+                          DataisLoaded: true,
+                      });
+
+              });
+      }
+
+    }
+
   render() {
+      var display;
     var { DataisLoaded, items } = this.state;
     if (!DataisLoaded)
       return (
@@ -41,32 +62,45 @@ class Jobs extends React.Component {
           <br />
           <br />
           <br />
-          <img src={load} />{" "}
+          <img alt={'loading'} src={load} />{" "}
         </div>
       );
 
     try {
-      return items.map((item) => {
-        const descricao = parse(item.body);
-
-        return (
-          <AccordionItem key={item.id} className={"trabalho"}>
-            <AccordionItemHeading>
-              <AccordionItemButton className={"trabalhocima"}>
-                <div>
-                  <div className={"jobtitle"}>{item.title}</div>
-                  <div className={"empresa"}>{item.company.name}</div>
-                </div>
-                <div>{item.publishedAt}</div>
-              </AccordionItemButton>
-            </AccordionItemHeading>
-            <AccordionItemPanel className={"trabalhobaixo"}>
-              {descricao}
-            </AccordionItemPanel>
-          </AccordionItem>
-        );
-      });
-    } catch (error) {
+        if ((this.state.total / this.state.count) < 12){
+            display = 'd-none';
+        }else {
+            display = '';
+        }
+        return(
+        <div>
+            {items.map((item) => {
+                const descricao = parse(item.body);
+                return (
+                    <AccordionItem key={item.id} className={"trabalho"}>
+                        <AccordionItemHeading>
+                            <AccordionItemButton className={"trabalhocima"}>
+                                <div>
+                                    <div className={"jobtitle"}>{item.title}</div>
+                                    <div className={"empresa"}>{item.company.name}</div>
+                                </div>
+                                <div>{item.publishedAt}</div>
+                            </AccordionItemButton>
+                        </AccordionItemHeading>
+                        <AccordionItemPanel className={"trabalhobaixo"}>
+                            {descricao}
+                        </AccordionItemPanel>
+                    </AccordionItem>
+                );
+            })}
+            {
+                <button className={`call ${display}`} onClick={() => this.setState({ count: this.state.count + 1 })}>
+                    Show More
+                </button>
+            }
+        </div>
+    )
+    }catch (error) {
       return (
         <div
           style={{

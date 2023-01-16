@@ -3,7 +3,7 @@ import cerqueira from "../assets/cerqueira.jpeg";
 
 export function About() {
   return (
-    <section className={"about"}>
+    <section className={"about pt-4"}>
       <div>
         <h1>
           <strong>ABOUT US</strong>
@@ -27,12 +27,12 @@ export function About() {
       <div className={"row gits mt-4"}>
         <div className={"col-md-6 col-sm-12"}>
           <a target={"_blank"} href={"https://github.com/cerkeira"}>
-            <img className={"city"} src={cerqueira} />
+            <img className={"city"} alt={'gatinho'} src={cerqueira} />
           </a>
         </div>
         <div className={"col-md-6 col-sm-12"}>
           <a target={"_blank"} href={"https://github.com/gitHubTiagoMarques"}>
-            <img className={"city"} src={tiago} />
+            <img className={"city"} alt={'gatão'} src={tiago} />
           </a>
         </div>
       </div>
