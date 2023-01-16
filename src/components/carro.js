@@ -10,8 +10,8 @@ class Carro extends Component {
         interval={4500}
         infiniteLoop
         className={
-          "text-white snap showArrows={true} onChange={onChange} onClickItem={onClickItem} "
-        }
+          "text-white snap onChange={onChange} onClickItem={onClickItem} "}
+           showArrows={true} swipeable={0} showThumbs={false}
       >
         <div className={"carroinfo carro1"}>
           <h2 className={"titlecarro"}>Cost of living</h2>
