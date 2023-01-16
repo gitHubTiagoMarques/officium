@@ -7,9 +7,9 @@ import { About } from "../components/about.js";
 function About_us() {
   return (
     <div className={"about_us"}>
-      <Navv></Navv>
-      <About></About>
-      <Footer></Footer>
+      <Navv/>
+      <About/>
+      <Footer/>
     </div>
   );
 }

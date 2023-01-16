@@ -20,7 +20,7 @@ export function Hero() {
           </Link>
         </div>
       </div>
-      <img className="deskimg" src={image} />
+      <img alt={'technology'} className="deskimg" src={image} />
     </section>
   );
 }

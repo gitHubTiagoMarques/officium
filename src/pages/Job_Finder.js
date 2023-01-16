@@ -7,11 +7,11 @@ import { Search } from "../components/search";
 function Finder() {
   return (
     <div className={"finder finderbg"}>
-      <Navv></Navv>
+      <Navv/>
       <div className={"resultss"}>
-        <Search></Search>
+        <Search/>
       </div>
-      <Footer></Footer>
+      <Footer/>
     </div>
   );
 }

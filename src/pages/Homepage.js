@@ -9,11 +9,11 @@ import { Nowadays } from "../components/nowadays";
 function Homepage() {
   return (
     <div className="homepage">
-      <Navv></Navv>
-      <Hero></Hero>
-      <Carro></Carro>
-      <Nowadays></Nowadays>
-      <Footer></Footer>
+      <Navv/>
+      <Hero/>
+      <Carro/>
+      <Nowadays/>
+      <Footer/>
     </div>
   );
 }

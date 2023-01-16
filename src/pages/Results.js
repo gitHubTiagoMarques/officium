@@ -7,12 +7,12 @@ import { Resultado } from "../components/resultado";
 function Results() {
   return (
     <div className={"finder"}>
-      <Navv></Navv>
+      <Navv/>
       <div className={"resultss"}>
-        <Resultado></Resultado>
+        <Resultado/>
       </div>
 
-      <Footer></Footer>
+      <Footer/>
     </div>
   );
 }

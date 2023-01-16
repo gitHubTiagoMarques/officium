@@ -16,7 +16,7 @@ export function Nowadays() {
           lot of advantages to seeking a career path in Portugal's rural places.
         </p>
       </div>
-      <div className={"col-12 d-none d-md-block text-center"}></div>
+      <div className={"col-12 d-none d-md-block text-center"}/>
       <div className={"jobfind col-12 text-center"}>
         <h1 className={"titlecarro"}>
           Here's a tool to help you find a job in these beautiful places.

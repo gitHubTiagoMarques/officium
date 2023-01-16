@@ -37,8 +37,6 @@ class Jobs extends React.Component {
       });
   }
     componentDidUpdate(prevProps,prevState) {
-      console.log(prevState.count)
-        console.log(this.state.count)
       if(prevState.count !== this.state.count){
           fetch((this.apilink + this.state.count))
               .then((res) => res.json())
