@@ -28,6 +28,7 @@ Desta maneira, o grupo de trabalho decidiu adotar um papel de apoio à evoluçã
 </br>
 *diminuir a densidade da mão de obra nas grandes cidades.
 </br>
+</br>
 Módulos de node:
 </br>
 *hamburger-react;
@@ -39,3 +40,4 @@ Módulos de node:
 *react-responsive-carousel;
 </br>
 *react-accessible-accordion.
+</br>
