@@ -362,7 +362,7 @@ nav {
   border: 0;
   border-radius: 200px;
   width: 40vw;
-  height: 2em;
+  height: 2.5rem;
   text-align: center;
   padding: 0;
   font-weight: 700;
@@ -371,7 +371,7 @@ nav {
   border: 0;
   border-radius: 200px;
   width: 40vw;
-  height: 2em;
+  height: 2.5rem;
   text-align: center;
   padding: 0;
   font-weight: 700;
@@ -474,11 +474,11 @@ a:active {
   background-color: white;
   color: gray;
   text-align: center;
-  border: 0;
+  border: 1px solid lightgrey;
   border-radius: 200px;
   font-size: 1.2em;
   font-weight: bold;
-  width: 14rem;
+
   height: 2.5rem;
   margin-top: 1.5em;
 }
@@ -649,6 +649,10 @@ a:active {
   .iptsearch {
     margin: 10px;
   }
+  .dataResult{
+    width: 40vw;
+    max-width: 422.39px;
+  }
   .input {
     width: 20vw;
   }
@@ -662,7 +666,7 @@ a:active {
   }
   /* search|||||||||||||||||||||||||| */
   .iptsearch {
-    width: 40vw;
+    width: 40vw !important;
     max-width: 22em;
   }
   .inputs span {
@@ -825,6 +829,13 @@ a:active {
     margin: 1rem auto 2em auto;
   }
 }
+@media (max-width: 575px){
+  .dataResult{
+     width: 278px !important;
+    margin: 0 !important;
+   }
+}
+
 
 /* about_us */
 .about_us {
@@ -906,4 +917,64 @@ a:active {
   color: #242038;
   border-bottom: solid 1px #242038;
   word-break: break-all;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dataResult {
+  position: absolute;
+  z-index: 100;
+  margin: 10px;
+  border-radius: 25px;
+  background: white;
+  border: 2px solid orange;
+  max-height: 300px;
+
+  overflow: hidden;
+  overflow-y: auto;
+
+}
+
+.dataResult::-webkit-scrollbar {
+  display: none;
+}
+
+.dataItem {
+  padding: 15px 15px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  cursor: pointer;
+  height: 2.5rem;
+}
+.dataItem p{
+  margin: 0;
+}
+
+.dataItem:hover {
+  background-color: #e9e9e9;
 }

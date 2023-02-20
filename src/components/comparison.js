@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import dados from "../assets/dados.json";
+
 const Index = dados;
 const giniportugal = 33.5;
 const Portugal = {
@@ -25,70 +26,56 @@ const none = {
 let resultado = [];
 let ginisearch;
 
-class Comparison extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      country: none,
-      rest: "unknown",
-    };
-  }
+const Comparison = () => {
+  const [country, setCountry] = useState(none);
+  const [rest, setRest] = useState("unknown");
 
-  render() {
-    const exportrest = (rest) => {
-      if (rest[0].gini != undefined) {
-        ginisearch = Object.values(rest[0].gini);
-      } else {
-        ginisearch = "Unknown";
-      }
+  const exportrest = (rest) => {
+    ginisearch = rest[0].gini !== undefined ? Object.values(rest[0].gini) : "Unknown";
+  };
 
-    };
+  const handleChange = (e) => {
+    setCountry((prev) => ({ ...prev, name: e }));
+    elemento(Index, e.toLowerCase());
+  };
 
-    const handleChange = (e) => {
-      this.setState({ state: (this.state.country = e) });
-      elemento(Index, this.state.country.toLowerCase());
-    };
+  const elemento = (objeto, title) => {
+    for (let i in objeto) {
+      if (objeto[i].name === title) {
+        resultado = objeto[i];
 
-    const elemento = (objeto, title) => {
-      for (let i in objeto) {
-        if (objeto[i].name == title) {
-          resultado = objeto[i];
-
-          fetch("https://restcountries.com/v3.1/name/" + resultado.name)
+        fetch("https://restcountries.com/v3.1/name/" + resultado.name)
             .then((res) => res.json())
             .then((json) => {
-              this.setState({ state: (this.state.rest = json) });
-              exportrest(this.state.rest);
+              setRest(json);
+              exportrest(rest);
             });
-        }
       }
-      if (resultado.name != title) {
-        resultado = none;
-        ginisearch = "";
-      }
-    };
+    }
+    if (resultado.name !== title) {
+      resultado = none;
+      ginisearch = "";
+    }
+  };
 
-    return (
+  return (
       <div className={"comparison snap"}>
         <h1>Compare the quality of life</h1>
         <h2>Between Portugal and other countries</h2>
         <h6>Based on the Quality of Life Index by Numbeo</h6>
         <div className={"countries"}>
+          <input className={"portugal"} defaultValue={"Portugal"} type={"text"} />
+          <hr />
           <input
-            className={"portugal"}
-            defaultValue={"Portugal"}
-            type={"text"}
-          ></input>
-          <hr></hr>
-          <input
-            className={"input"}
-            type={"text"}
-            placeholder="Country"
-            id="country"
-            name="country"
-            onChange={(e) => handleChange(e.target.value)}
-            defaultValue=""
-          ></input>
+              autoComplete="off"
+              className={"input"}
+              type={"text"}
+              placeholder="Country"
+              id="country"
+              name="country"
+              onChange={(e) => handleChange(e.target.value)}
+              defaultValue=""
+          />
         </div>
         <hr />
         <div className={"compare"}>
@@ -97,7 +84,7 @@ class Comparison extends React.Component {
               <p>{Portugal["Quality of Life Index"]}</p>
               <div className={"ryze"}>
                 <p className={"legend"}>Quality of life Index</p>
-                <hr></hr>
+                <hr />
               </div>
               <p>{resultado["Quality of Life Index"]}</p>
             </div>
@@ -105,7 +92,7 @@ class Comparison extends React.Component {
               <p>{Portugal["Purchasing Power Index"]}</p>
               <div className={"ryze"}>
                 <p className={"legend"}>Purchasing Power Index</p>
-                <hr></hr>
+                <hr />
               </div>
               <p>{resultado["Purchasing Power Index"]}</p>
             </div>
@@ -179,7 +166,6 @@ class Comparison extends React.Component {
         </p>
       </div>
     );
-  }
 }
 
 export { Comparison };

@@ -1,16 +1,22 @@
 import "../App.css";
-import React from "react";
+import React, {useEffect, useState} from "react";
 import { createSearchParams, useNavigate } from "react-router-dom";
-import { useState } from "react";
 
-export function Search() {
+export function Search({ data }) {
   const navigate = useNavigate();
   const [inputs, setInputs] = useState({});
+  const [filterSearch, setFilterSearch] = useState([])
 
   const handleChange = (event) => {
     const name = event.target.name;
     const value = event.target.value;
     setInputs((values) => ({ ...values, [name]: value }));
+
+    const newFilter = data.filter(value => {
+      return value.name.toLowerCase().includes(inputs.city.toLowerCase())
+    })
+
+    setFilterSearch(newFilter)
   };
 
   const handleSubmit = (event) => {
@@ -23,6 +29,19 @@ export function Search() {
       }).toString(),
     });
   };
+
+  useEffect(() => {
+
+    if (inputs.city === "") {
+      setFilterSearch([])
+    }
+
+  }, [inputs.city])
+
+  function handleClickAutoComplete(value) {
+    setInputs({...inputs, city: value.name})
+    setFilterSearch([])
+  }
   return (
     <div className={"search"}>
       <h1 className={"titlesearch"}>MAKE THE JUMP</h1>
@@ -40,14 +59,26 @@ export function Search() {
             value={inputs.job || ""}
             onChange={handleChange}
           />
-          <input
-            className={"iptsearch"}
-            placeholder="Location"
-            type="text"
-            name="city"
-            value={inputs.city || ""}
-            onChange={handleChange}
-          />
+          <div>
+            <input
+                autocomplete="off"
+                className={"iptsearch"}
+                placeholder="Location"
+                type="text"
+                name="city"
+                value={inputs.city || ""}
+                onChange={handleChange}
+            />
+            {filterSearch.length !== 0 &&
+            <div className='dataResult'>
+              {filterSearch.slice(0, 15).map(value => (
+                  <div key={value.id} className='dataItem' onClick={() => handleClickAutoComplete(value)}>
+                    <p>{value.name}</p>
+                  </div>
+              ))}
+            </div>
+            }
+          </div>
         </div>
 
         <input className={"btnsearch"} type="submit" value={"Search"} />
