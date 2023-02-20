@@ -11,7 +11,12 @@ export function Search({ data }) {
     const name = event.target.name;
     const value = event.target.value;
     setInputs((values) => ({ ...values, [name]: value }));
+  };
 
+  const handleFilter = (event) => {
+    const name = event.target.name;
+    const value = event.target.value;
+    setInputs((values) => ({ ...values, [name]: value }));
     const newFilter = data.filter(value => {
       return value.name.toLowerCase().includes(inputs.city.toLowerCase())
     })
@@ -67,7 +72,7 @@ export function Search({ data }) {
                 type="text"
                 name="city"
                 value={inputs.city || ""}
-                onChange={handleChange}
+                onChange={handleFilter}
             />
             {filterSearch.length !== 0 &&
             <div className='dataResult'>
