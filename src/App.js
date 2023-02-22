@@ -9,7 +9,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename={'/officium'}>
+      <BrowserRouter basename={window.location.pathname || ''}>
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/Finder" element={<Finder />} />
