@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/officium/static/css/main.d96c0791.css",
+    "main.js": "/officium/static/js/main.2b2768de.js",
+    "static/js/787.48665498.chunk.js": "/officium/static/js/787.48665498.chunk.js",
+    "static/media/carro3.jpg": "/officium/static/media/carro3.8025f17f3ebe1da03166.jpg",
+    "static/media/finder.png": "/officium/static/media/finder.2878b08547549643cd53.png",
+    "static/media/carro1.jpg": "/officium/static/media/carro1.b2eebabf0426c9c1b67a.jpg",
+    "static/media/carro4.jpg": "/officium/static/media/carro4.9445a75719542a383daa.jpg",
+    "static/media/back.png": "/officium/static/media/back.c0f0de33a932aab19485.png",
+    "static/media/carro2.jpg": "/officium/static/media/carro2.b1f49a195398c4d83b0c.jpg",
+    "static/media/cerqueira.jpeg": "/officium/static/media/cerqueira.b835ee2171ce46d0f8dd.jpeg",
+    "static/media/load.gif": "/officium/static/media/load.e1394fb267abd170d851.gif",
+    "static/media/tiago.jfif": "/officium/static/media/tiago.f5c64f873ea23fea0b4e.jfif",
+    "index.html": "/officium/index.html",
+    "main.d96c0791.css.map": "/officium/static/css/main.d96c0791.css.map",
+    "main.2b2768de.js.map": "/officium/static/js/main.2b2768de.js.map",
+    "787.48665498.chunk.js.map": "/officium/static/js/787.48665498.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d96c0791.css",
+    "static/js/main.2b2768de.js"
+  ]
+}
