@@ -63,7 +63,7 @@ class Jobs extends Component {
             );
         }
 
-        const display = total / count < 12 ? "d-none" : "";
+        const display = total / count <= 12 ? "d-none" : "";
 
         try {
             return (
