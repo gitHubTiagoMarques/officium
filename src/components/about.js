@@ -16,7 +16,11 @@ export function About() {
           there are working conditions in rural areas, the population is
           concentrated in urban areas. The purpose of the website is to give a
           new opportunity to the rural areas of the country and to show their
-          potential as a work place.
+          potential as a work place.<br/>
+          Contact us via email:<br/> <strong>al.tiagosoares@gmail.com</strong>
+          <br/>
+          <strong>ricardocerqueira0@protonmail.com</strong>
+
         </p>
       </div>
       <div>
