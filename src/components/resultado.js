@@ -13,7 +13,7 @@ export function Resultado() {
     if (data[i].name === searchparams.get("city").toLowerCase()) {
       cidadeid = data[i].id;
     } else if (searchparams.get("city") === "undefined") {
-      cidadeid = "1,2,3,4,5,6,8,9,10,11,29,13,14,15,12,18,20,17,22,21,16";
+      cidadeid = "2,3,5,6,9,10,11,13,15,12,20,17,22,21,16";
     }
   }
   let trabalho;
